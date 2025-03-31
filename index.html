@@ -52,15 +52,15 @@
             border-radius: 15px;
             padding: 30px;
             text-align: center;
-            width: 300px;
+            width: 280px;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             background: #222;
             color: white;
         }
         .plan h2 {
             color: #ffcc00;
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 3em;
+            margin-bottom: 30px;
         }
         .plan p {
             font-size: 1.2em;
@@ -200,6 +200,23 @@
     </div>
 </body>
 
+<section class="streaming-slider-container">
+    <h2 style="text-align: center; color: #ffffff; padding: 20px; font-size: 3em;">
+        Não precisa de várias assinaturas! <br> Você só precisa da PrimeTV
+    </h2>
+    <div class="streaming-slider">
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-4.png" alt="Netflix"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-5.png" alt="Prime Video"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-11.jpg" alt="Disney+"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-12.jpg" alt="HBO Max"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-10.jpg" alt="Globoplay"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-9.jpg" alt="Paramount+"></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd7tQkOSu7HUNj74O1qN-xlx19S8fhCqWjQ&s" alt="UFC Fight Pass"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-7.png" alt="Combate"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-8.jpg" alt="Star+"></div>
+    </div>
+</section>
+
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -217,7 +234,7 @@
 </html>
     
     <section class="plans" id="plans">
-        <h2 style="text-align: center; width: 100%; color: #ffcc00;">Planos de Canais de TV + Filmes e Séries FULL HD</h2>
+        <h2 style="text-align: center; width: 100%; color: #ffcc00;">Planos Exclusivos de TV Premium + Filmes e Séries em FULL HD</h2>
         <div class="plan">
             <h2>Teste Grátis 3 Horas</h2>
             <p>Todos os Canais TV + 120MIL Contéudos de Filmes e Séries em Full HD (+18 opcional).</p>
@@ -268,25 +285,8 @@
     </script>
 </body>
 
-<section class="streaming-slider-container">
-    <h2 style="text-align: center; color: #ffffff; padding: 20px; font-size: 2em;">
-        Não precisa de várias assinaturas! <br> Você só precisa da PrimeTV
-    </h2>
-    <div class="streaming-slider">
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-4.png" alt="Netflix"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-5.png" alt="Prime Video"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-11.jpg" alt="Disney+"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-12.jpg" alt="HBO Max"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-10.jpg" alt="Globoplay"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-9.jpg" alt="Paramount+"></div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd7tQkOSu7HUNj74O1qN-xlx19S8fhCqWjQ&s" alt="UFC Fight Pass"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-7.png" alt="Combate"></div>
-        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-8.jpg" alt="Star+"></div>
-    </div>
-</section>
-
 <section class="launches">
-    <h2 style="text-align: center; color: #ffcc00; padding: 10px;">LANÇAMENTOS DE FILMES</h2>
+    <h2 style="text-align: center; color: #ffffff; padding: 10px;">LANÇAMENTOS DE FILMES</h2>
     <div class="launch-slider">
         <img src="https://m.media-amazon.com/images/I/6132zsY2x3L._AC_UF1000,1000_QL80_.jpg" alt="Filme 1">
         <img src="https://m.media-amazon.com/images/I/917q-7O0TJL._AC_UF1000,1000_QL80_.jpg" alt="Filme 2">
@@ -446,7 +446,7 @@
             event.preventDefault();
             $('html, body').animate({
                 scrollTop: $('#sobre-nos').offset().top
-            }, 2000, 'linear'); // 2 segundos com rolagem constante
+            }, 1500, 'linear'); // 2 segundos com rolagem constante
         });
     });
 </script>
@@ -749,11 +749,11 @@
     $(document).ready(function(){
         $('.streaming-slider').slick({
             autoplay: true,
-            autoplaySpeed: 2000,
+            autoplaySpeed: 0,
             dots: false,
             arrows: true,
             infinite: true,
-            speed: 600,
+            speed: 1500,
             slidesToShow: 4,
             slidesToScroll: 1,
             responsive: [
@@ -797,7 +797,7 @@
    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="24" height="24">
    Suporte via WhatsApp
 </a>
+</body>
+</html>
 	
-
-
 

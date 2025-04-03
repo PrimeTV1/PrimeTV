@@ -176,14 +176,34 @@
         }
 
         /* Aumentando o tamanho do título */
-        .overlay h1 {
-            font-size: 3.5em;
-            font-weight: bold;
-            color: #ffffff;
-            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-            opacity: 0;
-            animation: fadeInUp 1.5s ease-out forwards;
-        }
+.overlay h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards, pulseGlow 2s infinite alternate ease-in-out 2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    from {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 35px rgba(255, 215, 0, 0.9);
+    }
+}
 
         .overlay p {
             font-size: 0.9em;

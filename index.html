@@ -939,9 +939,42 @@
 
 </div>
 	
-<a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Saber Mais!" target="_blank" 
-   style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; padding: 12px; border-radius: 50%; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
-   <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="28" height="28">
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    animation: pulse 1.5s infinite;
+    z-index: 1000;
+  }
+
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+</style>
+
+<a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Saber Mais!" target="_blank" class="whatsapp-button">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
 

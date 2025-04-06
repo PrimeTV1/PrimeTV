@@ -869,13 +869,16 @@
 <style>
     .streaming-slider-container {
         background: #111;
-		text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         padding: 40px 0;
+        overflow: hidden;
     }
+
     .streaming-slider {
         width: 85%;
         margin: 0 auto;
     }
+
     .streaming-slider img {
         width: 99%;
         height: auto;
@@ -883,6 +886,7 @@
         margin: auto;
         transition: transform 0.3s ease-in-out;
     }
+
     .streaming-slider img:hover {
         transform: scale(1.1);
     }
@@ -893,12 +897,15 @@
         $('.streaming-slider').slick({
             autoplay: true,
             autoplaySpeed: 0,
-            dots: false,
-            arrows: true,
+            speed: 2000,
+            cssEase: 'linear',
             infinite: true,
-            speed: 1500,
             slidesToShow: 4,
             slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            pauseOnFocus: false,
             responsive: [
                 { breakpoint: 1024, settings: { slidesToShow: 3 } },
                 { breakpoint: 768, settings: { slidesToShow: 2 } },

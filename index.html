@@ -29,19 +29,23 @@
     100% { transform: scale(1); }
 }
 
-.overlay { 
-    position: absolute; 
-    top: 0; left: 0; 
-    width: 100%; height: 100%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    animation: fade-in 1s ease-out forwards;
-    transform: translateX(50%); /* AGORA move a overlay para a direita */
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* NOVO: alinhar à esquerda para poder empurrar */
+  text-align: left;
+  padding: 20px;
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+  margin-left: 300px; /* NOVO: move para a direita */
+}
+
+.buttons {
+  margin-left: 300px; /* NOVO: move os botões para a direita também */
 }
 
 .overlay h1 { 

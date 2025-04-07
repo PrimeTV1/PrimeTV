@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime TV - Premium Streaming</title>
+    <title>Prime TV</title>
 	<link rel="icon" href="https://media.discordapp.net/attachments/623416032035471361/1358386082051522580/PrimeTV_MINI_ICO_OFICIAL.webp?ex=67f3a71f&is=67f2559f&hm=bc2468302f971693f164af3a822421ee7d3e5248c2214cc7200b004a34135955&=&format=webp&width=96&height=64" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         body { margin: 0; font-family: Arial, sans-serif; background-color: black; color: white; overflow-x: hidden; }
-        .banner { width: 120%; height: 100vh; position: relative; overflow: hidden; }
-        .banner .slick-slide img { width: 120%; height: 100vh; object-fit: cover; }
+        .banner { width: 110%; height: 100vh; position: relative; overflow: hidden; }
+        .banner .slick-slide img { width: 110%; height: 100vh; object-fit: cover; }
         
 @keyframes fade-in {
     from {
@@ -33,6 +33,7 @@
     position: absolute; 
     top: 0; left: 0; 
     width: 100%; height: 100%; 
+    background: rgba(0, 0, 0, 0.6); 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -57,57 +58,24 @@
     animation: fade-in 1.8s ease-out forwards;
 }
 
-.btn-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
-}
-
 .btn-primary, .btn-whatsapp {
-    padding: 12px 24px; /* ligeiramente menor */
-    font-size: 1em;     /* menor para mobile */
+    padding: 15px 30px;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
     display: inline-block;
     animation: fade-in 2s ease-out forwards, pulse 2s infinite ease-in-out 3s;
-    white-space: nowrap;
-    text-align: center;
 }
 
-.btn-primary {
-    background: red;
-    border: none;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: darkred;
+.btn-primary:hover, .btn-whatsapp:hover {
     transform: scale(1.1);
 }
-
-.btn-whatsapp {
-    background: green;
-    border: none;
-    color: white;
-    text-decoration: none;
-}
-
-.btn-whatsapp:hover {
-    background: darkgreen;
-    transform: scale(1.1);
-}
-
-/* Responsivo */
-@media (max-width: 480px) {
-    .btn-primary, .btn-whatsapp {
-        flex: 1 1 45%;
-        font-size: 0.9em;
-        padding: 10px 20px;
-    }
-}
+        }
+        .btn-primary { background: red; border: none; color: white; }
+        .btn-primary:hover { background: darkred; transform: scale(1.1); }
+        .btn-whatsapp { background: green; border: none; color: white; text-decoration: none; }
+        .btn-whatsapp:hover { background: darkgreen; transform: scale(1.1); }
         
         .plans {
             display: flex; 
@@ -164,7 +132,7 @@
 <body>
     <header>
         <div class="banner slider">
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358386056051036220/BANNER_OFICIAL_1920_FULL_HD_PRIME_TV-_2_.jpg?ex=67f44fd9&is=67f2fe59&hm=2a76d35492de51513e0d46785c76f00e2e78d69e5f4494ac097e1db8dc849b93&=&format=webp&width=888&height=507" alt="Destaque 1"></div>
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466237629333635/PRIME_TV_4K_Professional.jpg?ex=67f3f1c6&is=67f2a046&hm=9eac204a89b2a431b66506575ef1966c0b947949914144b2172a3ec86d6a8968&=&format=webp&width=1062&height=598" alt="Destaque 1"></div>
             <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238979768650/BANNER_2_4K_RES.jpg?ex=67f3f1c6&is=67f2a046&hm=387af45e68cc53770b47ad3bb353b05d51fde16271925f8b73c2c800e007a224&=&format=webp&width=1133&height=598" alt="Destaque 2"></div>
             <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468657793077571/BANNER_5_FILMES_LANCAMENTOS_PRIMETV.png?ex=67f3f407&is=67f2a287&hm=f649992ec25e2d63806aa7f321fe8af3a04dcc268684ce6a01656ed788fbf23c&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 3"></div>
 	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468658707300504/BANNER_6_SERIES_PRIMETV_OFICIAL.png?ex=67f3f407&is=67f2a287&hm=2f1a6c40ee1840167e6264cad5b4461bbe4c6cb138cccb1a6ac974bfa80154dc&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 4"></div>
@@ -283,67 +251,33 @@
 </head>
 <body>
     <div class="overlay">
-      <h1>Prime TV</h1>
-      <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Plataforma Autorizada</p>
-      <p>Assista aos melhores canais, filmes e séries sem interrupções!</p>
-      <div class="buttons">
+        <h1>Prime TV</h1>
+	 <p>✔️Plataforma Autorizada!</p>
+     <p>Os Melhores CanaisTV, Filmes e Séries Sem interrupções!</p>		
         <button class="btn-primary" id="subscribeBtn">Quero Conhecer os Planos 🛒</button>
-        <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Olá, @PrimeTV! Gostaria de saber mais! (Acesso pelo Site)" class="btn-whatsapp" target="_blank">Teste Gratís 3 Horas</a>
-        <br />
+        <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Saber Mais! (Acesso pelo Site)" class="btn-whatsapp" target="_blank">Acesse nosso WhatsApp</a>
+        <br>
         <a href="#sobre-nos" class="about-btn">Sobre Nós</a>
-      </div>
     </div>
-  </header>
+</body>
 
 
-<section 
-  class="streaming-slider-container" 
-  style="
-    width: 120%;
-    margin-left: -10%;
-    background-image: url('https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591');
-    background-size: cover;
-    background-position: center;
-    padding: 60px 20px;
-    box-sizing: border-box;
-  "
->
-  <h2 
-    style="
-      text-align: center;
-      color: #ffffff;
-      font-size: 2em;
-      border-radius: 12px;
-      margin: 0 auto 30px auto;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px 40px;
-      max-width: 90%;
-    "
-  >
-    Todas as Assinaturas em uma Plataforma só! <br> Na <strong>PrimeTV</strong>
-  </h2>
-
-  <div 
-    class="streaming-slider" 
-    style="
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding: 20px 0;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    "
-  >
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-4.png" alt="Netflix" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://media.discordapp.net/attachments/623416032035471361/1358615643020071032/PREMIERE_COPIA_BASE_ICONE.png?ex=67f47ceb&is=67f32b6b&hm=e471ab62fe02a08eaadc9fac15923450183a05a1438d8309c6f804989ea574a7&=&format=webp&quality=lossless&width=1138&height=598" alt="Prime Video" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-11.jpg" alt="Disney+" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-12.jpg" alt="HBO Max" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-10.jpg" alt="Globoplay" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-9.jpg" alt="Paramount+" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd7tQkOSu7HUNj74O1qN-xlx19S8fhCqWjQ&s" alt="UFC Fight Pass" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-7.png" alt="Combate" style="height: 170px;"></div>
-    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-8.jpg" alt="Star+" style="height: 170px;"></div>
-  </div>
+<section class="streaming-slider-container" style="width: 110%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;">
+    <h2 style="text-align: center; color: #ffffff; padding: 20px; font-size: 1em; background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+        Todas as Assinaturas em uma Plataforma só! <br> Na PrimeTV
+    </h2>
+    <div class="streaming-slider" style="display: flex; gap: 10px; overflow-x: auto; padding: 20px 0;">
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-4.png" alt="Netflix"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-5.png" alt="Prime Video"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-11.jpg" alt="Disney+"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-12.jpg" alt="HBO Max"></div>
+        <div><img src="https://images-ext-1.discordapp.net/external/LH_iGXDgb3OQZjWar5rY3ArQlXi0jd6xFkt99gixze8/%3F_nc_cat%3D111%26ccb%3D1-7%26_nc_sid%3D127cfc%26_nc_ohc%3D-q3IQjimXagQ7kNvgGLIZkL%26_nc_oc%3DAdnu1wpH9NhWma_5aXvonT-8OV1RbIsh_o_AChHu2xcCeMleoHpcql1MoGCNnMwISKg%26_nc_zt%3D23%26_nc_ht%3Dscontent-gru2-1.xx%26_nc_gid%3DOSZ8raflgMGf1nqsNF9BuA%26oh%3D00_AYELliqgiZEBI2kn9NWDq4ZdhvD5vjwzThVdGIfXxcRzOg%26oe%3D67F009F4/https/scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/487480674_122167836590527746_1741128391084561256_n.jpg?format=webp&width=180&height=180" alt="Premiere"></div>    
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-10.jpg" alt="Globoplay"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-9.jpg" alt="Paramount+"></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd7tQkOSu7HUNj74O1qN-xlx19S8fhCqWjQ&s" alt="UFC Fight Pass"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-7.png" alt="Combate"></div>
+        <div><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-8.jpg" alt="Star+"></div>
+    </div>
 </section>
 <html lang="pt">
 <!DOCTYPE html>
@@ -406,57 +340,53 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 120%;
-	margin-left: -10%;
+    width: 110%;
     padding: 60px 0; /* opcional, pra dar respiro em cima e embaixo */
 }
 </style>
     
     <section class="plans" id="plans">
-        <h2 style="text-align: center; width: 140%; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); color: #ffcc00;">Planos Exclusivos de TV Premium + Filmes e Séries em FULL HD</h2>
-<div class="plan">
-    <h2>Teste Grátis 3 Horas</h2>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
-    <p><strong>R$ 0 Gratís</strong></p>
-    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Solicitar um Teste Gratís de 3 Horas!(Acesso Pelo Site)" class="btn-contratar">Teste Gratís Agora</a>
-</div>
-
-<div class="plan">
-    <h2>Plano Mensal</h2>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
-    <p><strong>R$ 29,90/mês</strong></p>
-    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Mensal! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
-</div>
-
-<div class="plan">
-    <h2>Plano Tri-Mestral</h2>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
-    <p><strong>R$ 69,90/mês</strong></p>
-    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Premium Tri-Mestral! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
-</div>
-
-<div class="plan">
-    <h2>Plano Anual</h2>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
-    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
-    <p><strong>R$ 299,90/mês</strong></p>
-    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Ultra Anual! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
-</div>
+        <h2 style="text-align: center; width: 100%; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); color: #ffcc00;">Planos Exclusivos de TV Premium + Filmes e Séries em FULL HD</h2>
+        <div class="plan">
+            <h2>Teste Grátis 3 Horas</h2>
+			<p>✔️ Todos os Canais em 4K e Full HD. +18 Opcional</p>
+			<p>✔️ Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+			<p>✔️ Suporte 24/7 – Atendimento rápido e Profissional.</p>
+			<p>✔️ App próprio compatibilidade com Smart TVs e Box Android.</p>
+			<p>✔️ Sem Travamentos – Servidores estáveis e de alta performance.</p>
+            <p><strong>R$ 0 Gratís</strong></p>
+             <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Solicitar um Teste Gratís de 3 Horas!(Acesso Pelo Site)" class="btn-contratar">Teste Gratís Agora</a>
+        </div>				
+        <div class="plan">
+            <h2>Plano Mensal</h2>
+			<p>✔️ Todos os Canais em 4K e Full HD. +18 Opcional</p>
+			<p>✔️ Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+			<p>✔️ Suporte 24/7 – Atendimento rápido e Profissional.</p>
+			<p>✔️ App próprio compatibilidade com Smart TVs e Box Android.</p>
+			<p>✔️ Sem Travamentos – Servidores estáveis e de alta performance.</p>
+            <p><strong>R$ 29,90/mês</strong></p>
+            <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Mensal! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+        </div>
+        <div class="plan">
+            <h2>Plano Tri-Mestral</h2>
+			<p>✔️ Todos os Canais em 4K e Full HD. +18 Opcional</p>
+			<p>✔️ Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+			<p>✔️ Suporte 24/7 – Atendimento rápido e Profissional.</p>
+			<p>✔️ App próprio compatibilidade com Smart TVs e Box Android.</p>
+			<p>✔️ Sem Travamentos – Servidores estáveis e de alta performance.</p>
+            <p><strong>R$ 69,90/mês</strong></p>
+             <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Premium Tri-Mestral! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+        </div>
+        <div class="plan">
+            <h2>Plano Anual</h2>
+			<p>✔️ Todos os Canais em 4K e Full HD. +18 Opcional</p>
+			<p>✔️ Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+			<p>✔️ Suporte 24/7 – Atendimento rápido e Profissional.</p>
+			<p>✔️ App próprio compatibilidade com Smart TVs e Box Android.</p>
+			<p>✔️ Sem Travamentos – Servidores estáveis e de alta performance.</p>
+            <p><strong>R$ 299,90/mês</strong></p>
+             <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Ultra Anual! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+        </div>
     </section>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -543,8 +473,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 120%;
-	margin-left: -10%;
+    width: 110%;
     padding: 60px 0; /* opcional, pra dar respiro em cima e embaixo */
 }
 </style>
@@ -553,13 +482,11 @@
     $(document).ready(function(){
         $('.launch-slider, .series-slider, .novelas-slider').slick({
             autoplay: true,
-            autoplaySpeed: 0,
+            autoplaySpeed: 1000,
             dots: true,
             arrows: true,
             infinite: true,
-            speed: 1000,
-			cssEase: 'linear',
-			infinite: true,
+            speed: 800,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -659,7 +586,7 @@
     });
 </script>
 
-<section id="sobre-nos" class="container" style="width: 96%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591) no-repeat center center/cover; padding: 40px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); border-radius: 12px;">
+<section id="sobre-nos" class="container" style="width: 89%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591) no-repeat center center/cover; padding: 40px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); border-radius: 12px;">
     <h1>Sobre Nós</h1>
     <p>✔️Plataforma Autorizada!</p>
     <p>Prime TV, Há mais de 7 Anos no Mercado e Alta Credibilidade. Nós Somos sua melhor opção para Assistir a Canais ao Vivo, Filmes, Séries com máxima Qualidade em FULL HD e sem interrupções.</p>
@@ -742,10 +669,8 @@
 </html>
 
 
-<section class="football-packages" style="width: 120%; margin-left: -10%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
-    <h2 style="text-align:; text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); color: #ffffff; padding: 10px; fit-content;">
-    TEMOS TODAS AS PLATAFORMAS DE FUTEBOL DISPONÍVEL
-</h2>
+<section class="football-packages" style="width: 110%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
+    <h2 style="text-align: center; text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); color: #ffffff; padding: 10px;">TEMOS TODAS AS PLATAFORMAS DE FUTEBOL DISPONIVEL</h2>
     <div class="football-slider">
         <div class="card"><img src="https://s3.glbimg.com/v1/AUTH_f486c675dfaf4c6e96c25f0c21f85eb5/prod/home-share-1b75cdaa.png" alt="PREMIERE"></div>
         <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM4uMMw9uZvj8o2E0EAxpExy71dEJIwYxHc3A9OoVBvHM1qne3n2i6ZWPBuYVYditqvZY&usqp=CAU" alt="DAZN"></div>
@@ -756,8 +681,8 @@
 </section>
 
 
-<section class="devices" style="width: 120%; margin-left: -10%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
-    <h2 class="section-title" style="text-align;">Dispositivos Compatíveis</h2>
+<section class="devices" style="width: 110%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
+    <h2 class="section-title">Dispositivos Compatíveis</h2>
     <div class="device-grid">
         <div class="device-card">
             <img src="https://images.tcdn.com.br/img/img_prod/680150/smart_tv_box_4k_ultra_hd_mxq_5277_1_12c39bdf961f82ef1cba702f26f91b1f.png" alt="TV Box">
@@ -825,7 +750,6 @@
     }
     .device-card img {
         width: 120px;
-		margin-left: -10%;
         height: auto;
         border-radius: 12px;
         margin-bottom: 12px;
@@ -910,12 +834,11 @@
     $(document).ready(function(){
         $('.football-slider').slick({
             autoplay: true,
-            autoplaySpeed: 0,
+            autoplaySpeed: 2000,
             dots: true,
             arrows: true,
-			cssEase: 'linear',
-			infinite: true,			
-            speed: 1000,
+            infinite: true,
+            speed: 800,
             slidesToShow: 3,
             slidesToScroll: 1,
             responsive: [
@@ -941,16 +864,13 @@
 <style>
     .streaming-slider-container {
         background: #111;
-        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+		text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
         padding: 40px 0;
-        overflow: hidden;
     }
-
     .streaming-slider {
         width: 85%;
         margin: 0 auto;
     }
-
     .streaming-slider img {
         width: 99%;
         height: auto;
@@ -958,7 +878,6 @@
         margin: auto;
         transition: transform 0.3s ease-in-out;
     }
-
     .streaming-slider img:hover {
         transform: scale(1.1);
     }
@@ -969,15 +888,12 @@
         $('.streaming-slider').slick({
             autoplay: true,
             autoplaySpeed: 0,
-            speed: 1000,
-            cssEase: 'linear',
+            dots: false,
+            arrows: true,
             infinite: true,
+            speed: 1500,
             slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            pauseOnHover: false,
-            pauseOnFocus: false,
             responsive: [
                 { breakpoint: 1024, settings: { slidesToShow: 3 } },
                 { breakpoint: 768, settings: { slidesToShow: 2 } },
@@ -987,7 +903,7 @@
     });
 </script>
 
-<div style="width: 120%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385994159620277/10104529.jpg?ex=67f3a70a&is=67f2558a&hm=eac6c8c793761464b8a6693ddb341b519e4d835efe83a65ff7ca4c00b8d3c006&=&format=webp&width=887&height=591) no-repeat center center; background-size: cover; padding: 40px 0;">
+<div style="width: 110%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385994159620277/10104529.jpg?ex=67f3a70a&is=67f2558a&hm=eac6c8c793761464b8a6693ddb341b519e4d835efe83a65ff7ca4c00b8d3c006&=&format=webp&width=887&height=591) no-repeat center center; background-size: cover; padding: 40px 0;">
     
     <footer style="background-color: #111; color: white; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
         <p style="margin: 0; font-size: 20px; font-weight: bold;">&copy; PrimeTV - 2025 Todos os direitos reservados.</p>
@@ -1053,20 +969,8 @@
   }
 </style>
 
-<a 
-  href="https://api.whatsapp.com/send?phone=5511950407835&text=Olá, @PrimeTV! Gostaria de saber mais!" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  class="whatsapp-button" 
-  aria-label="Fale conosco pelo WhatsApp"
->
-  <img 
-    src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
-    alt="Ícone do WhatsApp" 
-    width="48" 
-    height="48"
-    style="vertical-align: middle;"
-  >
+<a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Saber Mais!" target="_blank" class="whatsapp-button">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 </main>  
 </body>

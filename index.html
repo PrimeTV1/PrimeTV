@@ -1,1 +1,1076 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime TV - Premium Streaming</title>
+	<link rel="icon" href="https://media.discordapp.net/attachments/623416032035471361/1358386082051522580/PrimeTV_MINI_ICO_OFICIAL.webp?ex=67f3a71f&is=67f2559f&hm=bc2468302f971693f164af3a822421ee7d3e5248c2214cc7200b004a34135955&=&format=webp&width=96&height=64" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: black; color: white; overflow-x: hidden; }
+        .banner { width: 120%; height: 100vh; position: relative; overflow: hidden; }
+        .banner .slick-slide img { width: 120%; height: 100vh; object-fit: cover; }
+        
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.overlay { 
+    position: absolute; 
+    top: 0; left: 0; 
+    width: 100%; height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: fade-in 1s ease-out forwards;
+}
+
+.overlay h1 { 
+    font-size: 4em; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+    animation: fade-in 1.5s ease-out forwards;
+}
+
+.overlay p { 
+    font-size: 1.5em; 
+    max-width: 600px; 
+    margin-bottom: 20px;
+    animation: fade-in 1.8s ease-out forwards;
+}
+
+.btn-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.btn-primary, .btn-whatsapp {
+    padding: 12px 24px; /* ligeiramente menor */
+    font-size: 1em;     /* menor para mobile */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    animation: fade-in 2s ease-out forwards, pulse 2s infinite ease-in-out 3s;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.btn-primary {
+    background: red;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: darkred;
+    transform: scale(1.1);
+}
+
+.btn-whatsapp {
+    background: green;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+    background: darkgreen;
+    transform: scale(1.1);
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    .btn-primary, .btn-whatsapp {
+        flex: 1 1 45%;
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}
+        
+        .plans {
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            padding: 40px; 
+            flex-wrap: wrap; 
+            background: #111;
+        }
+        .plan {
+            border: 2px solid #ffcc00;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            width: 210px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background: #222;
+            color: white;
+        }
+        .plan h2 {
+            color: #ffcc00;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .plan p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .plan:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.7);
+        }
+        .btn-contratar {
+            background: #E50914;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .btn-contratar:hover {
+            background: #E50914;
+            transform: scale(1.1);
+        }
+        
+        footer { text-align: center; padding: 20px; background: #222; font-size: 1.1em; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner slider">
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358386056051036220/BANNER_OFICIAL_1920_FULL_HD_PRIME_TV-_2_.jpg?ex=67f44fd9&is=67f2fe59&hm=2a76d35492de51513e0d46785c76f00e2e78d69e5f4494ac097e1db8dc849b93&=&format=webp&width=888&height=507" alt="Destaque 1"></div>
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238979768650/BANNER_2_4K_RES.jpg?ex=67f3f1c6&is=67f2a046&hm=387af45e68cc53770b47ad3bb353b05d51fde16271925f8b73c2c800e007a224&=&format=webp&width=1133&height=598" alt="Destaque 2"></div>
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468657793077571/BANNER_5_FILMES_LANCAMENTOS_PRIMETV.png?ex=67f3f407&is=67f2a287&hm=f649992ec25e2d63806aa7f321fe8af3a04dcc268684ce6a01656ed788fbf23c&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 3"></div>
+	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468658707300504/BANNER_6_SERIES_PRIMETV_OFICIAL.png?ex=67f3f407&is=67f2a287&hm=2f1a6c40ee1840167e6264cad5b4461bbe4c6cb138cccb1a6ac974bfa80154dc&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 4"></div>
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468656996028558/BANNER_2_PRIMETV_BBB.png?ex=67f3f406&is=67f2a286&hm=c6b852edf60161536ec88ba4043e79c540b92b84ceef3bde5289c6c0b735ef2e&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 5"></div>
+	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358469177098109180/BANNER_3_CHAMPIONS_DISNEY_ETC.png?ex=67f3f482&is=67f2a302&hm=cf57744143011514d5623a3dd590a65f9f74a608464caf5415c9479c23d7769d&=&format=webp&quality=lossless&width=1110&height=625" alt="Destaque 6"></div>
+            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238057156718/BANNER_OPCIONAL_EM_4K.jpg?ex=67f3f1c6&is=67f2a046&hm=9048fd377e0f60bcd2f948c43022ad9e38d6a950f3c90e0afd8ae19f38376c09&=&format=webp&width=1133&height=598"></div>
+	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238598090843/BANNER_8_ULTIMO_4K.jpg?ex=67f3f1c6&is=67f2a046&hm=032a139231c4a021688d474db91d433219f6a6159f71e8e7442558dd8f5b63f6&=&format=webp&width=1133&height=598" alt="Destaque 8"></div>
+        </div>
+<head>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); }
+            100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .overlay {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        /* Aumentando o tamanho do título */
+.overlay h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards, pulseGlow 2s infinite alternate ease-in-out 2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseGlow {
+    from {
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    }
+    to {
+        text-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 35px rgba(255, 215, 0, 0.9);
+    }
+}
+
+        .overlay p {
+            font-size: 0.9em;
+			text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+			font-weight: bold;
+            color: #ddd;
+            margin-bottom: 0.9px;
+        }
+
+        .btn-primary, .btn-whatsapp, .about-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 05px;
+        }
+
+        /* Botão Assine Agora em vermelho */
+        .btn-primary {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+
+        /* Botão Sobre Nós agora centralizado abaixo do WhatsApp */
+        .about-btn {
+            background: linear-gradient(45deg, #444, #222);
+            color: white;
+        }
+
+        /* Efeito ao passar o mouse */
+        .btn-primary:hover, .btn-whatsapp:hover, .about-btn:hover {
+            transform: scale(1.05);
+            animation: glow 1.5s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+      <h1>Prime TV</h1>
+      <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Plataforma Autorizada</p>
+      <p>Assista aos melhores canais, filmes e séries sem interrupções!</p>
+      <div class="buttons">
+        <button class="btn-primary" id="subscribeBtn">Quero Conhecer os Planos 🛒</button>
+        <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Olá, @PrimeTV! Gostaria de saber mais! (Acesso pelo Site)" class="btn-whatsapp" target="_blank">Teste Gratís 3 Horas</a>
+        <br />
+        <a href="#sobre-nos" class="about-btn">Sobre Nós</a>
+      </div>
+    </div>
+  </header>
+
+
+<section 
+  class="streaming-slider-container" 
+  style="
+    width: 120%;
+    margin-left: -10%;
+    background-image: url('https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+  "
+>
+  <h2 
+    style="
+      text-align: center;
+      color: #ffffff;
+      font-size: 2em;
+      border-radius: 12px;
+      margin: 0 auto 30px auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      max-width: 90%;
+    "
+  >
+    Todas as Assinaturas em uma Plataforma só! <br> Na <strong>PrimeTV</strong>
+  </h2>
+
+  <div 
+    class="streaming-slider" 
+    style="
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px 0;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    "
+  >
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-4.png" alt="Netflix" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://media.discordapp.net/attachments/623416032035471361/1358615643020071032/PREMIERE_COPIA_BASE_ICONE.png?ex=67f47ceb&is=67f32b6b&hm=e471ab62fe02a08eaadc9fac15923450183a05a1438d8309c6f804989ea574a7&=&format=webp&quality=lossless&width=1138&height=598" alt="Prime Video" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-11.jpg" alt="Disney+" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-12.jpg" alt="HBO Max" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-10.jpg" alt="Globoplay" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-9.jpg" alt="Paramount+" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd7tQkOSu7HUNj74O1qN-xlx19S8fhCqWjQ&s" alt="UFC Fight Pass" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-7.png" alt="Combate" style="height: 170px;"></div>
+    <div style="flex: 0 0 auto; scroll-snap-align: start;"><img src="https://fsconect.online/wp-content/uploads/2024/04/transferir-8.jpg" alt="Star+" style="height: 170px;"></div>
+  </div>
+</section>
+<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vídeo do YouTube</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; /* fundo neutro fora da seção do vídeo */
+    }
+
+    .video-section {
+      width: 100%;
+      background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358386081690550462/OFICIAL_BANNER_FUSAO_DE_FUNDO_PRIMETV.webp?ex=67f3a71f&is=67f2559f&hm=f477924535e02bfed624811addbb535e40bb44dbfdd2879ebc7d09e3435e5e79&=&format=webp&width=888&height=500); /* Substitua pelo seu banner */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .video-section h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+    .video-section iframe {
+      border: 4px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-section">
+    <h2>Como Funciona à @PrimeTV?</h2>
+    <br />
+    <iframe width="360" height="470" src="https://www.youtube.com/embed/p7U8eH7zZSM" 
+      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+</body>
+</html>
+
+<style>
+.plans {
+    background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); /* substitua pelo banner desejado */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120%;
+	margin-left: -10%;
+    padding: 60px 0; /* opcional, pra dar respiro em cima e embaixo */
+}
+</style>
+    
+    <section class="plans" id="plans">
+        <h2 style="text-align: center; width: 140%; text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); color: #ffcc00;">Planos Exclusivos de TV Premium + Filmes e Séries em FULL HD</h2>
+<div class="plan">
+    <h2>Teste Grátis 3 Horas</h2>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
+    <p><strong>R$ 0 Gratís</strong></p>
+    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Solicitar um Teste Gratís de 3 Horas!(Acesso Pelo Site)" class="btn-contratar">Teste Gratís Agora</a>
+</div>
+
+<div class="plan">
+    <h2>Plano Mensal</h2>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
+    <p><strong>R$ 29,90/mês</strong></p>
+    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Mensal! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+</div>
+
+<div class="plan">
+    <h2>Plano Tri-Mestral</h2>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
+    <p><strong>R$ 69,90/mês</strong></p>
+    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Premium Tri-Mestral! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+</div>
+
+<div class="plan">
+    <h2>Plano Anual</h2>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Canais em 4K e Full HD. +18 Opcional</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Todos os Filmes e Séries – Catálogo sempre Atualizado.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Suporte 24/7 – Atendimento rápido e Profissional.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> App próprio compatível com Smart TVs e Box Android.</p>
+    <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Sem Travamentos – Servidores estáveis e de alta performance.</p>
+    <p><strong>R$ 299,90/mês</strong></p>
+    <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Ola, @PrimeTV! Gostaria de Assinar um Plano Ultra Anual! (Acesso pelo Site)" class="btn-contratar">Assinar já</a>
+</div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                fade: true,
+                speed: 1000,
+                cssEase: 'linear'
+            });
+
+            $('#subscribeBtn').click(function() {
+                $('html, body').animate({
+                    scrollTop: $('#plans').offset().top
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+
+<section class="launches">
+    <h2 style="text-align: center; color: #ffffff; padding: 10px;">LANÇAMENTOS DE FILMES</h2>
+    <div class="launch-slider">
+        <img src="https://m.media-amazon.com/images/I/6132zsY2x3L._AC_UF1000,1000_QL80_.jpg" alt="Filme 1">
+        <img src="https://m.media-amazon.com/images/I/917q-7O0TJL._AC_UF1000,1000_QL80_.jpg" alt="Filme 2">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhuHxa5-dmm71EDj-w-t3qf9GTfdHnbjf4tjn1_HudcEh6_PX3jh4jvWOAg0XB_6iUDYtcuNsNIfZMVZmeY8u_TTnYhmZ2TS4h7INsrcn-eUNPCkruNh67HtuNfytLIbgDh9aG7RyrvWpC-qPfHUDk6XEpM40niVLpVYZ8oUSiQ82lRLT6sZ6a5UQ/s1600/IMG_5755.jpeg" alt="Filme 3">
+        <img src="https://www.papodecinema.com.br/wp-content/uploads/2022/12/20230705-missao-impossivel-contas-papo-de-cinema-cartaz.jpg" alt="Filme 4">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-39.webp" alt="Filme 5">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-47.webp" alt="Filme 6">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-46.webp" alt="Filme 7">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-51.webp" alt="Filme 8">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-40.webp" alt="Filme 9">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-45.webp" alt="Filme 10">		
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-44.webp" alt="Filme 11">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-38.webp" alt="Filme 11">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-37.webp" alt="Filme 11">
+        <img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-42.webp" alt="Filme 11">		
+   </div>
+</section>
+
+<section class="series-launches">
+    <h2 style="text-align: center; color: #ffffff; padding: 0px;">LANÇAMENTOS DE SÉRIES</h2>
+    <div class="series-slider">
+            <div><img src="https://i.pinimg.com/originals/50/8f/ba/508fba93c5f1b8f1ea1db81dd969e2a0.jpg" alt="Série 1"></div>
+            <div><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCpmFPRaIsc0EzwiFdVZQvS5APqXNfSewMkAJaTDzDRab7N9tdM9NPBTzZrkPE4RsZTc-Xl7xWbGNr-LDQdtrA10N258tsD0KEYa8wOnUVQ12z05NC7aTzSpL8tfK2LOap6rna6mEqyOQ/s1600/normal_2154_28129.jpg" alt="Série 2"></div>
+            <div><img src="https://br.web.img3.acsta.net/img/a1/b5/a1b5b81d813366b16f6d98e23a5f8f96.jpg" alt="Série 3"></div>
+            <div><img src="https://images-ext-1.discordapp.net/external/tyF53dn4aCccHyGafsIgUFrU1bonLpFbhBZ5fxiGcso/https/i.scdn.co/image/ab67616d0000b2734ab50c28cf8c85ddf617aa63?format=webp&width=512&height=512"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 4"></div>
+	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-55.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 5"></div>
+  	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-48.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 6"></div>
+            <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-36.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 7"></div>
+	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-34.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 8"></div>
+	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-35.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 9"></div>
+	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-30.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 10"></div>
+	    <div><img src="https://cineflick.link/wp-content/uploads/2025/02/IMG-52.webp"/revision/latest?cb=20240406123209&path-prefix=pt-br" alt="Série 11"></div>
+    </div>
+</section>
+
+<style>
+    .launches, .series-launches, .novelas-launches {
+        background: #111;
+		text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        padding: 40px 0;
+    }
+    .launch-slider, .series-slider, .novelas-slider {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .launch-slider img, .series-slider img, .novelas-slider img {
+        width: 99%;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .launch-slider img:hover, .series-slider img:hover, .novelas-slider img:hover {
+        transform: scale(1.05);
+    }
+	.launches, .series-launches, .novelas-launches {
+    background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); /* substitua pelo banner desejado */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 120%;
+	margin-left: -10%;
+    padding: 60px 0; /* opcional, pra dar respiro em cima e embaixo */
+}
+</style>
+
+<script>
+    $(document).ready(function(){
+        $('.launch-slider, .series-slider, .novelas-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+			cssEase: 'linear',
+			infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nós - Prime TV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #ddd;
+        }
+
+        .btn-voltar {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            background: linear-gradient(45deg, #444, #222);
+            color: white;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .btn-voltar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            arrows: false,
+            infinite: true,
+            fade: true,
+            speed: 1000,
+            cssEase: 'linear'
+        });
+
+        $('#subscribeBtn').click(function() {
+            $('html, body').animate({
+                scrollTop: $('#plans').offset().top
+            }, 1500, 'swing');
+        });
+
+        $('.about-btn').click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $('#sobre-nos').offset().top
+            }, 1500, 'linear'); // 2 segundos com rolagem constante
+        });
+    });
+</script>
+
+<section id="sobre-nos" class="container" style="width: 96%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591) no-repeat center center/cover; padding: 40px; color: white; text-shadow: 1px 1px 4px rgba(0,0,0,0.7); border-radius: 12px;">
+    <h1>Sobre Nós</h1>
+    <p>✔️Plataforma Autorizada!</p>
+    <p>Prime TV, Há mais de 7 Anos no Mercado e Alta Credibilidade. Nós Somos sua melhor opção para Assistir a Canais ao Vivo, Filmes, Séries com máxima Qualidade em FULL HD e sem interrupções.</p>
+    <p>Nosso compromisso é oferecer Entretenimento de alto nível com um serviço acessível e confiável.</p>
+</section>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de Download</title>
+    <style>
+        .download-button {
+            display: inline-block;
+            padding: 16px 32px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <a href="https://drive.google.com/uc?export=download&id=1W2MqvSWSU3y0nskx7IfukvGxBn9qYT1K" class="download-button" target="_blank">Download APP PrimeTV Premium Oficial</a>
+	
+	
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões de Redes Sociais</title>
+    <style>
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            margin: 10px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn img {
+            width: 40px;
+            height: 40px;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .youtube { background-color: #FF0000; }
+        .tiktok { background-color: #000000; }
+        .facebook { background-color: #1877F2; }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="https://www.youtube.com/@PrimeTV_HD" target="_blank" class="btn youtube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube">
+        </a>
+        <a href="https://www.tiktok.com/@primetv_hd" target="_blank" class="btn tiktok">
+            <img src="https://img.freepik.com/vetores-premium/logo-do-tik-tok_578229-290.jpg" alt="TikTok">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61565832400602" target="_blank" class="btn facebook">
+            <img src="https://www.itabirito.mg.leg.br/imagens/copy_of_face.png/image" alt="Facebook">
+        </a>
+    </div>
+</body>
+</html>
+
+
+<section class="football-packages" style="width: 120%; margin-left: -10%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
+    <h2 style="text-align:; text-shadow: 0 0 15px rgba(255, 215, 0, 0.8); color: #ffffff; padding: 10px; fit-content;">
+    TEMOS TODAS AS PLATAFORMAS DE FUTEBOL DISPONÍVEL
+</h2>
+    <div class="football-slider">
+        <div class="card"><img src="https://s3.glbimg.com/v1/AUTH_f486c675dfaf4c6e96c25f0c21f85eb5/prod/home-share-1b75cdaa.png" alt="PREMIERE"></div>
+        <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM4uMMw9uZvj8o2E0EAxpExy71dEJIwYxHc3A9OoVBvHM1qne3n2i6ZWPBuYVYditqvZY&usqp=CAU" alt="DAZN"></div>
+        <div class="card"><img src="https://assets.goal.com/images/v3/blteffed3ec281cc517/sportv-logo-8.png?auto=webp&format=pjpg&width=3840&quality=60" alt="SporTV"></div>
+        <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxx1HqKQ4BRyKRAenn2GMc5kb65GlOXaW7qQ&s" alt="ESPN"></div>
+        <div class="card"><img src="https://cdn.melhorplano.net/strapi/tv_por_assinatura_programacao_assistir_tnt_sports_png_6707c14097.png" alt="TNT"></div>
+    </div>
+</section>
+
+
+<section class="devices" style="width: 120%; margin-left: -10%; background-image: url(https://media.discordapp.net/attachments/623416032035471361/1358385991471206441/abstract-luxury-soft-red-background-christmas-valentines-layout-designstudioroom-web-template-business-report-with-smooth-circl.jpg?ex=67f3a709&is=67f25589&hm=d2631b47bc9a423aac9e00099900171cf19c3bf9674885ab82dac979363e32e9&=&format=webp&width=591&height=591); background-size: cover; background-position: center; padding: 40px 0;"> 
+    <h2 class="section-title" style="text-align;">Dispositivos Compatíveis</h2>
+    <div class="device-grid">
+        <div class="device-card">
+            <img src="https://images.tcdn.com.br/img/img_prod/680150/smart_tv_box_4k_ultra_hd_mxq_5277_1_12c39bdf961f82ef1cba702f26f91b1f.png" alt="TV Box">
+            <p>TV Box</p>
+        </div>
+        <div class="device-card">
+            <img src="https://a-static.mlcdn.com.br/1500x1500/amazon-fire-tv-stick-4k-max-modelo-mais-novo-suporte-wi-fi-6e-16-gb-quad-core-2-0ghz/deandreonline/69e633a6c33a11ef977e4201ac18503c/7067ccff81f8546d0acb952c53ef977e.jpeg" alt="Stick TV">
+            <p>Stick TV</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/CHROMECAST.webp" alt="Chromecast">
+            <p>Chromecast</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/CELULAR.webp" alt="Celular">
+            <p>Celular</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/COMPUTADOR.webp" alt="Computador">
+            <p>Computador</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/PLAYSTATION.webp" alt="Playstation">
+            <p>Playstation</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/XBOX.webp" alt="Xbox">
+            <p>Xbox</p>
+        </div>
+        <div class="device-card">
+            <img src="https://fsconect.online/wp-content/uploads/2025/01/SMART-TV.webp" alt="Smart TV">
+            <p>Smart TV</p>
+        </div>
+    </div>
+</section>
+    <a href="https://l1nk.dev/s/qad91" class="download-button" target="_blank">Download ROKU TV SMART APP</a>
+
+<style>
+    .devices {
+        background: #111;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .section-title {
+        color: #ffcc00;
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .device-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+        padding: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+    .device-card {
+        background: #222;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+    }
+    .device-card img {
+        width: 120px;
+		margin-left: -10%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 12px;
+    }
+    .device-card p {
+        color: #ffcc00;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .device-card:hover {
+        transform: scale(1.08);
+        box-shadow: 0px 6px 20px rgba(255, 204, 0, 0.7);
+    }
+</style>
+
+<style>
+    .devices {
+        background: #111;
+        padding: 40px 0;
+    }
+    .device-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .device-card {
+        background: #222;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    .device-card img {
+        width: 120px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    .device-card p {
+        color: #ffcc00;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .device-card:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+    }
+</style>
+
+
+
+<style>
+    .football-packages {
+        background: #111;
+        padding: 40px 0;
+    }
+    .football-slider {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .football-slider .card {
+        text-align: center;
+        padding: 10px;
+    }
+    .football-slider .card img {
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .football-slider .card img:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $('.football-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            dots: true,
+            arrows: true,
+			cssEase: 'linear',
+			infinite: true,			
+            speed: 1000,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+
+<style>
+    .streaming-slider-container {
+        background: #111;
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        padding: 40px 0;
+        overflow: hidden;
+    }
+
+    .streaming-slider {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .streaming-slider img {
+        width: 99%;
+        height: auto;
+        display: block;
+        margin: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .streaming-slider img:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        $('.streaming-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 1000,
+            cssEase: 'linear',
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            pauseOnFocus: false,
+            responsive: [
+                { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                { breakpoint: 768, settings: { slidesToShow: 2 } },
+                { breakpoint: 480, settings: { slidesToShow: 1 } }
+            ]
+        });
+    });
+</script>
+
+<div style="width: 120%; background: url(https://media.discordapp.net/attachments/623416032035471361/1358385994159620277/10104529.jpg?ex=67f3a70a&is=67f2558a&hm=eac6c8c793761464b8a6693ddb341b519e4d835efe83a65ff7ca4c00b8d3c006&=&format=webp&width=887&height=591) no-repeat center center; background-size: cover; padding: 40px 0;">
+    
+    <footer style="background-color: #111; color: white; padding: 40px 20px; text-align: center; font-family: Arial, sans-serif;">
+        <p style="margin: 0; font-size: 20px; font-weight: bold;">&copy; PrimeTV - 2025 Todos os direitos reservados.</p>
+
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <img src="https://geradornv.com.br/wp-content/themes/v1.34.7/assets/images/logos/pix/logo-pix-1024x1024.png" 
+                alt="Pix" 
+                style="height: 80px;">
+                
+            <img src="https://logospng.org/wp-content/uploads/mercado-pago.png" 
+                alt="Mercado Pago" 
+                style="height: 50px;">
+                
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqbxY2msx6oF2wfp6QNM7GIBmarWqp-8Wjw&s" 
+                alt="Boleto" 
+                style="height: 50px;">
+        </div>
+    </footer>
+
+    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin: 20px 0;">
+        <img src="https://p2cinetv.com/wp-content/uploads/2022/06/seguro.png.webp" 
+            alt="Site Seguro" 
+            style="height: 70px; filter: brightness(0.9);">
+            
+        <img src="https://cdn.awsli.com.br/1879/1879961/arquivos/site-protegido.png" 
+            alt="Site Protegido" 
+            style="height: 70px; filter: brightness(0.9);">
+    </div>
+
+</div>
+	
+<style>
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    animation: pulse 1.5s infinite;
+    z-index: 1000;
+  }
+
+  .whatsapp-button img {
+    width: 28px;
+    height: 28px;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+</style>
+
+<a 
+  href="https://api.whatsapp.com/send?phone=5511950407835&text=Olá, @PrimeTV! Gostaria de saber mais!" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  class="whatsapp-button" 
+  aria-label="Fale conosco pelo WhatsApp"
+>
+  <img 
+    src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
+    alt="Ícone do WhatsApp" 
+    width="48" 
+    height="48"
+    style="vertical-align: middle;"
+  >
+</a>
+</main>  
+</body>
+</html>
+	
+
 

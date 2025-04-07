@@ -1,293 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prime TV - Premium Streaming</title>
-	<link rel="icon" href="https://media.discordapp.net/attachments/623416032035471361/1358386082051522580/PrimeTV_MINI_ICO_OFICIAL.webp?ex=67f3a71f&is=67f2559f&hm=bc2468302f971693f164af3a822421ee7d3e5248c2214cc7200b004a34135955&=&format=webp&width=96&height=64" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <style>
-        body { margin: 0; font-family: Arial, sans-serif; background-color: black; color: white; overflow-x: hidden; }
-        .banner { width: 120%; height: 100vh; position: relative; overflow: hidden; }
-        .banner .slick-slide img { width: 120%; height: 100vh; object-fit: cover; }
-        
-@keyframes fade-in {
-    from {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime TV - Premium Streaming</title>
+  <link rel="icon" href="https://media.discordapp.net/attachments/623416032035471361/1358386082051522580/PrimeTV_MINI_ICO_OFICIAL.webp" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .banner {
+      width: 120%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .banner .slick-slide img {
+      width: 120%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    @keyframes fade-in {
+      from {
         opacity: 0;
         transform: scale(0.95);
-    }
-    to {
+      }
+      to {
         opacity: 1;
         transform: scale(1);
+      }
     }
-}
 
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
 
-.overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; /* Alinha tudo à esquerda */
-  text-align: left;
-  padding: 40px;
-  opacity: 0;
-  animation: fade-in 1s ease-out forwards;
-  margin-left: 0; /* Bem mais à esquerda agora */
-}
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      padding: 40px;
+      opacity: 0;
+      animation: fade-in 1s ease-out forwards;
+      transform: translateX(200px); /* move a overlay pra direita */
+    }
 
-.buttons {
-  margin-left: 40px; /* Mantém alinhado com o título e os parágrafos */
-}
+    .buttons {
+      margin-top: 20px;
+    }
 
-.overlay h1 { 
-  font-size: 4em; 
-  text-transform: uppercase; 
-  margin-bottom: 10px; 
-  animation: fade-in 1.5s ease-out forwards;
-}
+    .overlay h1 {
+      font-size: 3.5em;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+      opacity: 0;
+      animation: fade-in 1.5s ease-out forwards, pulseGlow 2s infinite alternate ease-in-out 2s;
+    }
 
-.overlay p { 
-  font-size: 1.5em; 
-  max-width: 600px; 
-  margin-bottom: 20px;
-  animation: fade-in 1.8s ease-out forwards;
-}
+    .overlay p {
+      font-size: 0.9em;
+      text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+      font-weight: bold;
+      color: #ddd;
+      margin-bottom: 0.9px;
+    }
 
-.btn-container {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 15px;
-}
+    .btn-primary, .btn-whatsapp, .about-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 5px;
+    }
 
-.btn-primary, .btn-whatsapp {
-  padding: 12px 24px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: all 0.3s ease-in-out;
-  display: inline-block;
-  animation: fade-in 2s ease-out forwards, pulse 2s infinite ease-in-out 3s;
-  white-space: nowrap;
-  text-align: center;
-  transform: none; /* Removido translateX(50%) para não empurrar pra direita */
-}
+    .btn-primary {
+      background: linear-gradient(45deg, #ff0000, #cc0000);
+      color: white;
+    }
 
-.btn-primary {
-  background: red;
-  border: none;
-  color: white;
-}
+    .btn-whatsapp {
+      background: #25D366;
+      color: white;
+    }
 
-.btn-primary:hover {
-  background: darkred;
-  transform: scale(1.1);
-}
+    .about-btn {
+      background: linear-gradient(45deg, #444, #222);
+      color: white;
+    }
 
-.btn-whatsapp {
-  background: green;
-  border: none;
-  color: white;
-  text-decoration: none;
-}
+    .btn-primary:hover, .btn-whatsapp:hover, .about-btn:hover {
+      transform: scale(1.05);
+      animation: glow 1.5s infinite alternate;
+    }
 
-.btn-whatsapp:hover {
-  background: darkgreen;
-  transform: scale(1.1);
-}
-
-/* Responsivo */
-@media (max-width: 480px) {
-  .btn-primary, .btn-whatsapp {
-    flex: 1 1 45%;
-    font-size: 0.9em;
-    padding: 10px 20px;
-  }
-}
-        
-        .plans {
-            display: flex; 
-            justify-content: center; 
-            gap: 20px; 
-            padding: 40px; 
-            flex-wrap: wrap; 
-            background: #111;
-        }
-        .plan {
-            border: 2px solid #ffcc00;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            width: 210px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            background: #222;
-            color: white;
-        }
-        .plan h2 {
-            color: #ffcc00;
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-        .plan p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-        }
-        .plan:hover {
-            transform: scale(1.1);
-            box-shadow: 0px 0px 20px rgba(255, 204, 0, 0.7);
-        }
-        .btn-contratar {
-            background: #E50914;
-            border: none;
-            color: white;
-            padding: 10px 20px;
-            font-size: 1.2em;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .btn-contratar:hover {
-            background: #E50914;
-            transform: scale(1.1);
-        }
-        
-        footer { text-align: center; padding: 20px; background: #222; font-size: 1.1em; }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="banner slider">
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358386056051036220/BANNER_OFICIAL_1920_FULL_HD_PRIME_TV-_2_.jpg?ex=67f44fd9&is=67f2fe59&hm=2a76d35492de51513e0d46785c76f00e2e78d69e5f4494ac097e1db8dc849b93&=&format=webp&width=888&height=507" alt="Destaque 1"></div>
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238979768650/BANNER_2_4K_RES.jpg?ex=67f3f1c6&is=67f2a046&hm=387af45e68cc53770b47ad3bb353b05d51fde16271925f8b73c2c800e007a224&=&format=webp&width=1133&height=598" alt="Destaque 2"></div>
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468657793077571/BANNER_5_FILMES_LANCAMENTOS_PRIMETV.png?ex=67f3f407&is=67f2a287&hm=f649992ec25e2d63806aa7f321fe8af3a04dcc268684ce6a01656ed788fbf23c&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 3"></div>
-	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468658707300504/BANNER_6_SERIES_PRIMETV_OFICIAL.png?ex=67f3f407&is=67f2a287&hm=2f1a6c40ee1840167e6264cad5b4461bbe4c6cb138cccb1a6ac974bfa80154dc&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 4"></div>
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358468656996028558/BANNER_2_PRIMETV_BBB.png?ex=67f3f406&is=67f2a286&hm=c6b852edf60161536ec88ba4043e79c540b92b84ceef3bde5289c6c0b735ef2e&=&format=webp&quality=lossless&width=1062&height=598" alt="Destaque 5"></div>
-	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358469177098109180/BANNER_3_CHAMPIONS_DISNEY_ETC.png?ex=67f3f482&is=67f2a302&hm=cf57744143011514d5623a3dd590a65f9f74a608464caf5415c9479c23d7769d&=&format=webp&quality=lossless&width=1110&height=625" alt="Destaque 6"></div>
-            <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238057156718/BANNER_OPCIONAL_EM_4K.jpg?ex=67f3f1c6&is=67f2a046&hm=9048fd377e0f60bcd2f948c43022ad9e38d6a950f3c90e0afd8ae19f38376c09&=&format=webp&width=1133&height=598"></div>
-	    <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358466238598090843/BANNER_8_ULTIMO_4K.jpg?ex=67f3f1c6&is=67f2a046&hm=032a139231c4a021688d474db91d433219f6a6159f71e8e7442558dd8f5b63f6&=&format=webp&width=1133&height=598" alt="Destaque 8"></div>
-        </div>
-<head>
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes glow {
-            0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
-            50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); }
-            100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: #000;
-            color: white;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-
-        .overlay {
-            text-align: left;
-            padding: 100px 20px;
-        }
-
-        /* Aumentando o tamanho do título */
-.overlay h1 {
-    font-size: 3.5em;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards, pulseGlow 2s infinite alternate ease-in-out 2s;
-}
-
-@keyframes fadeInUp {
-    from {
+    @keyframes fadeInUp {
+      from {
         opacity: 0;
         transform: translateY(30px);
-    }
-    to {
+      }
+      to {
         opacity: 1;
         transform: translateY(0);
+      }
     }
-}
 
-@keyframes pulseGlow {
-    from {
+    @keyframes pulseGlow {
+      from {
         text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-    }
-    to {
+      }
+      to {
         text-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 35px rgba(255, 215, 0, 0.9);
+      }
     }
-}
 
-        .overlay p {
-            font-size: 0.9em;
-			text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-			font-weight: bold;
-            color: #ddd;
-            margin-bottom: 0.9px;
-        }
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+      50% { box-shadow: 0 0 20px rgba(255, 0, 0, 0.8); }
+      100% { box-shadow: 0 0 5px rgba(255, 0, 0, 0.2); }
+    }
 
-        .btn-primary, .btn-whatsapp, .about-btn {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 1.2em;
-            font-weight: bold;
-            text-decoration: none;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin: 05px;
-        }
+    @media (max-width: 480px) {
+      .btn-primary, .btn-whatsapp {
+        flex: 1 1 45%;
+        font-size: 0.9em;
+        padding: 10px 20px;
+      }
 
-        /* Botão Assine Agora em vermelho */
-        .btn-primary {
-            background: linear-gradient(45deg, #ff0000, #cc0000);
-            color: white;
-        }
+      .overlay {
+        transform: none;
+        align-items: center;
+        text-align: center;
+      }
 
-        .btn-whatsapp {
-            background: #25D366;
-            color: white;
-        }
-
-        /* Botão Sobre Nós agora centralizado abaixo do WhatsApp */
-        .about-btn {
-            background: linear-gradient(45deg, #444, #222);
-            color: white;
-        }
-
-        /* Efeito ao passar o mouse */
-        .btn-primary:hover, .btn-whatsapp:hover, .about-btn:hover {
-            transform: scale(1.05);
-            animation: glow 1.5s infinite alternate;
-        }
-    </style>
+      .buttons {
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="banner slider">
+      <!-- Imagens do carrossel -->
+      <div><img src="https://media.discordapp.net/attachments/623416032035471361/1358386056051036220/BANNER_OFICIAL_1920_FULL_HD_PRIME_TV-_2_.jpg" alt="Destaque 1"></div>
+      <!-- Adicione os outros banners aqui -->
+      <div class="overlay">
+        <h1>Prime TV</h1>
+        <p><img src="https://img.icons8.com/ios_filled/512w/40C057/instagram-check-mark.png" alt="check" width="16" height="16"> Plataforma Autorizada</p>
+        <p>Assista aos melhores canais, filmes e séries sem interrupções!</p>
+        <div class="buttons">
+          <button class="btn-primary" id="subscribeBtn">Quero Conhecer os Planos 🛒</button>
+          <a href="https://api.whatsapp.com/send?phone=5511950407835&text=Olá, @PrimeTV! Gostaria de saber mais! (Acesso pelo Site)" class="btn-whatsapp" target="_blank">Teste Grátis 3 Horas</a>
+          <br />
+          <a href="#sobre-nos" class="about-btn">Sobre Nós</a>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="pt">
 <head>

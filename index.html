@@ -46,22 +46,22 @@
       100% { transform: scale(1); }
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: left;
-      padding: 40px;
-      opacity: 0;
-      animation: fade-in 1s ease-out forwards;
-      transform: translateX(500px); /* move a overlay pra direita */
-    }
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 40px;
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+}
 
     .buttons {
       margin-top: 20px;

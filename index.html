@@ -36,84 +36,83 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* NOVO: alinhar à esquerda para poder empurrar */
+  align-items: flex-start; /* Alinha tudo à esquerda */
   text-align: left;
   padding: 40px;
   opacity: 0;
   animation: fade-in 1s ease-out forwards;
-  margin-left: 800px; /* NOVO: move para a direita */
+  margin-left: 70px; /* Bem mais à esquerda agora */
 }
 
 .buttons {
-  margin-left: 600px; /* NOVO: move os botões para a direita também */
+  margin-left: 40px; /* Mantém alinhado com o título e os parágrafos */
 }
 
 .overlay h1 { 
-    font-size: 4em; 
-    text-transform: uppercase; 
-    margin-bottom: 10px; 
-    animation: fade-in 1.5s ease-out forwards;
+  font-size: 4em; 
+  text-transform: uppercase; 
+  margin-bottom: 10px; 
+  animation: fade-in 1.5s ease-out forwards;
 }
 
 .overlay p { 
-    font-size: 1.5em; 
-    max-width: 600px; 
-    margin-bottom: 20px;
-    animation: fade-in 1.8s ease-out forwards;
+  font-size: 1.5em; 
+  max-width: 600px; 
+  margin-bottom: 20px;
+  animation: fade-in 1.8s ease-out forwards;
 }
 
 .btn-container {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 15px;
 }
 
 .btn-primary, .btn-whatsapp {
-    padding: 12px 24px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    display: inline-block;
-    animation: fade-in 2s ease-out forwards, pulse 2s infinite ease-in-out 3s;
-    white-space: nowrap;
-    text-align: center;
-    transform: translateX(50%); /* AGORA move os botões para a direita */
+  padding: 12px 24px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  animation: fade-in 2s ease-out forwards, pulse 2s infinite ease-in-out 3s;
+  white-space: nowrap;
+  text-align: center;
+  transform: none; /* Removido translateX(50%) para não empurrar pra direita */
 }
 
 .btn-primary {
-    background: red;
-    border: none;
-    color: white;
+  background: red;
+  border: none;
+  color: white;
 }
 
 .btn-primary:hover {
-    background: darkred;
-    transform: scale(1.1);
+  background: darkred;
+  transform: scale(1.1);
 }
 
 .btn-whatsapp {
-    background: green;
-    border: none;
-    color: white;
-    text-decoration: none;
+  background: green;
+  border: none;
+  color: white;
+  text-decoration: none;
 }
 
 .btn-whatsapp:hover {
-    background: darkgreen;
-    transform: scale(1.1);
-}
+  background: darkgreen;
+  transform: scale(1.1);
 }
 
 /* Responsivo */
 @media (max-width: 480px) {
-    .btn-primary, .btn-whatsapp {
-        flex: 1 1 45%;
-        font-size: 0.9em;
-        padding: 10px 20px;
-    }
+  .btn-primary, .btn-whatsapp {
+    flex: 1 1 45%;
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
 }
         
         .plans {

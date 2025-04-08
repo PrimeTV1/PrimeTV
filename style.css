@@ -1605,7 +1605,7 @@ section, div, iframe {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 468px) {
   .banner {
     height: 200px;
     background-size: contain;

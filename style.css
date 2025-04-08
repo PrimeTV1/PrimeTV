@@ -1602,5 +1602,10 @@ button, .btn {
   p {
     font-size: 1rem;
   }
+}
+
+.secao {
+  display: flex;
+  flex-wrap: wrap;
 }	
 	

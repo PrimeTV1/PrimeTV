@@ -1591,15 +1591,3 @@ section, div, iframe {
   }
 }  
 
-@media (max-width: 480px) {
-  body {
-    transform: scale(0.75);
-    transform-origin: top center;
-  }
-}
-
-.site-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  max-width: 1200px; /* Limita em telas muito grandes */
-}

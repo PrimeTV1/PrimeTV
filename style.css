@@ -1564,9 +1564,9 @@ section, div, iframe {
   
   
 /* Torna os cards responsivos */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .planos-container > div {
-    max-width: 100% !important;
+    max-width: 90% !important;
     margin: 0 auto;
   }
 
@@ -1577,7 +1577,7 @@ section, div, iframe {
   }
 
   iframe {
-    width: 90% !important;
+    width: 100% !important;
     height: auto !important;
   }
 

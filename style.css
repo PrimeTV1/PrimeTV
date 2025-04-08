@@ -1591,3 +1591,9 @@ section, div, iframe {
   }
 }  
 
+@media (max-width: 480px) {
+  body {
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+}

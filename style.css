@@ -1607,5 +1607,24 @@ button, .btn {
 .secao {
   display: flex;
   flex-wrap: wrap;
-}	
+}
+
 	
+.secao {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+@media (max-width: 768px) {
+  .secao {
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+  }
+}	

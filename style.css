@@ -1504,6 +1504,19 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
   }
 
 
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	
+  .card {
+    width: 90%;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
 

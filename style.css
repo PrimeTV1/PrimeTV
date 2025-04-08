@@ -1628,3 +1628,41 @@ button, .btn {
     width: 100%;
   }
 }	
+
+
+	
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .secao {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    gap: 1rem;
+    background: #111;
+  }
+
+  .item {
+    flex: 1 1 300px;
+    min-width: 200px;
+    background: crimson;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 100%;
+    }
+  }
+</style>
+
+<div class="secao">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+</div>

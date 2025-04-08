@@ -1592,7 +1592,7 @@ section, div, iframe {
 }  
 
 .device-grid img {
-  width: 30px; /* ou menos, tipo 60px */
+  width: 5px; /* ou menos, tipo 60px */
   height: auto;
   display: block;
   margin: 0 auto 10px auto;
@@ -1600,6 +1600,6 @@ section, div, iframe {
 
 .device-card p {
   text-align: center;
-  font-size: 14px;
+  font-size: 5px;
 }
 

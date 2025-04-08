@@ -1499,3 +1499,20 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
     flex-direction: column; /* Empilha os itens verticalmente */
   }
 }
+
+.stack-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Espaço entre os elementos */
+}
+
+/* Empilha no celular */
+@media (max-width: 768px) {
+  .stack-mobile {
+    flex-direction: column;
+  }
+
+  .stack-mobile > * {
+    width: 100%;
+  }
+}

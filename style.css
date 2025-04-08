@@ -1591,10 +1591,6 @@ section, div, iframe {
   }
 }  
 
-img {
-  width: 100%;
-  height: auto;
-}
 
 .banner {
   width: 100vw; /* 100% da largura da tela */

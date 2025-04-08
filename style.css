@@ -1515,36 +1515,37 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
   .stack-mobile > * {
     width: 100%;
   }
+
+}	
+width: 100%;
+max-width: 1200px;
 }
 
 
-.scroll-horizontal {
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+}
+
+.container {
   display: flex;
-  overflow-x: auto; /* Habilita scroll horizontal */
-  gap: 16px;
-  padding: 16px;
-  scroll-behavior: smooth;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.scroll-horizontal .item {
-  flex: 0 0 auto; /* Não encolhe, largura fixa */
-  width: 300px; /* ou o tamanho dos seus cards */
-  border: 1px solid #ccc;
-  padding: 16px;
-  background: #f9f9f9;
-  border-radius: 8px;
-}
 
-.overlay { 
-    position: absolute; 
-    top: 0; left: 0; 
-    width: 100%; height: 100%; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    animation: fade-in 1s ease-out forwards;
+img, video {
+  max-width: 100%;
+  height: auto;
 }
+	
+

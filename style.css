@@ -1520,3 +1520,87 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
   box-sizing: border-box;
 }
 
+
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VIEWPORT RESPONSIVA */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+/* CONTAINER BASE */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* CARDS FLEXÍVEIS */
+.card {
+  flex: 1 1 300px; /* flexível, mínimo de 300px */
+  max-width: 400px;
+  padding: 1.5rem;
+  background: #111;
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+/* IMAGENS E TEXTOS AJUSTÁVEIS */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* BOTÕES RESPONSIVOS */
+button, .btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* MOBILE FIRST AJUSTES */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}	
+	

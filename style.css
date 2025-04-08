@@ -1,5 +1,25 @@
+/* === CONFIGURAÇÕES GERAIS === */
 html {
-  font-size: 100%; /* Usa a base do navegador, responsivo a zoom */
+  font-size: 100%; /* Responsivo a zoom */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: #000;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img, video, iframe {
@@ -9,31 +29,10 @@ img, video, iframe {
 
 .container, .slide-track {
   overflow: hidden;
-}
-
-body {
-  line-height: 1.6;
-  font-size: 1rem; /* ou 16px, baseado no root */
-  max-width: 90%;
-  overflow-x: hidden;
-}
-/* === RESET & BASE === */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
-  background: #000;
-  overflow-x: hidden;
-  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
 
 /* === ANIMAÇÕES PERSONALIZADAS === */
@@ -137,6 +136,7 @@ body {
   display: flex;
   gap: 30px;
   list-style: none;
+  flex-wrap: wrap;
 }
 .nav-links a {
   text-decoration: none;
@@ -154,11 +154,11 @@ body {
 
 /* === HEADER === */
 header {
-  padding: 120px 20px 90px; /* subiu 60px no topo */
+  padding: 120px 20px 90px;
   text-align: center;
 }
 header h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   color: #ff0033;
   text-shadow: 0 0 15px #ff0033;
   animation: fadeInUp 1.2s ease forwards, pulse 2.5s infinite;
@@ -202,7 +202,7 @@ header button:hover {
   justify-content: center;
   min-width: 210px;
   height: 50px;
-  margin-top: 0px; /* subiu 20px */
+  margin-top: 0px;
   padding: 0 15px;
   font-size: 1.05rem;
   font-weight: 600;
@@ -262,6 +262,47 @@ section p, section li {
   max-width: 800px;
   margin: 0 auto;
   color: #fff;
+}
+
+/* === MEDIA QUERY GLOBAL PARA RESPONSIVIDADE === */
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  header {
+    padding: 100px 10px 60px;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  section {
+    padding: 60px 10px;
+  }
+
+  .botao-animado, .botao-whatsapp {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .botoes-duplos {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* === PLANOS === */

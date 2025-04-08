@@ -1566,7 +1566,7 @@ section, div, iframe {
 /* Torna os cards responsivos */
 @media (max-width: 768px) {
   .planos-container > div {
-    max-width: 80% !important;
+    max-width: 90% !important;
     margin: 0 auto;
   }
 
@@ -1604,3 +1604,252 @@ section, div, iframe {
 }
 
 
+/* Garante que a tela não tenha scroll lateral */
+html, body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Banner de segurança no rodapé */
+.footer-banner {
+  background-color: #8B0000;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.payment-methods,
+.security-seals {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-icon,
+.security-icon {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.payment-icon:hover,
+.security-icon:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  background: #111;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
+.footer-bottom a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Animação */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Planos (Cards) */
+.planos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.plan {
+  background: rgba(0, 0, 0, 0.99);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(139, 0, 0, 1);
+  text-align: left;
+  overflow: hidden;
+}
+
+.plan img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.plan h2 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.plan ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.plan li {
+  margin-bottom: 15px;
+}
+
+.plan li img {
+  width: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.plan p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.btn-green {
+  background-color: #00cc66;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #00a84f;
+}
+
+/* Título animado com gradiente */
+.titulo-prime {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(2rem, 6vw, 4rem);
+  text-align: center;
+  background: linear-gradient(90deg, #ff0000, #ff9900, #ffff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
+
+/* Imagens e seções com largura máxima */
+img,
+section,
+div,
+iframe {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: auto;
+}
+
+/* Seção de planos */
+#planos {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+  /* Força os planos a ficarem um embaixo do outro */
+  .planos-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .planos-container > div,
+  .plan {
+    max-width: 95% !important;
+    width: 100%;
+  }
+
+  .titulo-prime,
+  h1, h2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .plan h2,
+  .plan li,
+  .plan p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .plan ul {
+    padding-left: 10px;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .slider-marcas img {
+    height: 30px !important;
+  }
+
+  .banner-slider img {
+    width: 100px !important;
+    height: auto;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .payment-methods,
+  .security-seals {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .payment-icon,
+  .security-icon {
+    width: 40px;
+  }
+}

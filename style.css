@@ -1481,3 +1481,67 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
     text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.6);
     margin-bottom: 40px;
   }
+
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  /* NAVBAR */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 0;
+    margin: 10px 0;
+    gap: 10px;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .logo img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* Título e header */
+  header h1,
+  .titulo-prime {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* Botões */
+  .botao-animado,
+  .botao-whatsapp,
+  header button {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+  }
+
+  /* Planos - stack em coluna */
+  #planos > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #planos > div > div {
+    max-width: 90% !important;
+  }
+
+  /* Vídeo responsivo */
+  .video-container iframe {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Slider de marcas - para evitar corte */
+  .slider-marcas img {
+    height: 30px;
+  }
+}

@@ -1481,3 +1481,21 @@ background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('sua-imagem')
     text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.6);
     margin-bottom: 40px;
   }
+
+
+.container {
+  display: flex;
+  gap: 16px; /* Espaço entre os itens */
+}
+
+.item {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Para telas menores, como celulares */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empilha os itens verticalmente */
+  }
+}

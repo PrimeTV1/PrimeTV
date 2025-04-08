@@ -1566,7 +1566,7 @@ section, div, iframe {
 /* Torna os cards responsivos */
 @media (max-width: 768px) {
   .planos-container > div {
-    max-width: 30% !important;
+    max-width: 100% !important;
     margin: 0 auto;
   }
 

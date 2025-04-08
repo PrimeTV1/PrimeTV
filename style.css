@@ -1589,17 +1589,7 @@ section, div, iframe {
     width: 100px !important;
     height: auto;
   }
-}  
 
-
-
-img {
-  width: 100%;
-  max-width: 600px; /* ou o valor desejado */
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
 @media (max-width: 600px) {
   img {

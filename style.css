@@ -1566,7 +1566,7 @@ section, div, iframe {
 /* Torna os cards responsivos */
 @media (max-width: 768px) {
   .planos-container > div {
-    max-width: 90% !important;
+    max-width: 80% !important;
     margin: 0 auto;
   }
 
@@ -1604,97 +1604,3 @@ section, div, iframe {
 }
 
 
-<style>
-  .planos-container {
-    padding: 20px;
-  }
-
-  #planos h1 {
-    text-align: center;
-  }
-
-  .planos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .plano-box {
-    background: rgba(0,0,0,0.99);
-    padding: 20px;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 320px;
-    text-align: left;
-    box-shadow: 0 0 20px rgba(139, 0, 0, 1);
-    box-sizing: border-box;
-  }
-
-  .plano-box img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 15px;
-  }
-
-  .plano-box h2 {
-    color: #fff;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .plano-box ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 20px 0;
-  }
-
-  .plano-box li {
-    margin-bottom: 15px;
-    color: white;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .plano-box p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    color: white;
-  }
-
-  .btn-green {
-    background-color: #00c851;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .btn-green:hover {
-    background-color: #007e33;
-  }
-
-  @media (max-width: 480px) {
-    .plano-box {
-      padding: 15px;
-    }
-
-    .plano-box h2 {
-      font-size: 1rem;
-    }
-
-    .plano-box li {
-      font-size: 0.9rem;
-    }
-
-    .plano-box p {
-      font-size: 1.3rem;
-    }
-  }
-</style>

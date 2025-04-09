@@ -1545,16 +1545,15 @@ h1 {
 /* Botão "Teste grátis 3 horas" (vermelho) */
 .botao-teste {
   background: linear-gradient(135deg, #e63946, #e63946);
-  border: none;
+  border-color: #e63946;
   color: #fff;
   font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 12px;
   box-shadow: 0 0 12px rgba(230, 57, 70, 0.8);
   transition: 0.3s ease;
 }
 .botao-teste:hover {
-  background-color: #c5303e;
+  background-color: #e63946;
+  color: #fff;
   transform: scale(1.06);
   box-shadow: 0 0 25px rgba(255, 0, 51, 0.8);
 }
@@ -1562,16 +1561,15 @@ h1 {
 /* Botão "Quero conhecer os planos" (azul royal) */
 .botao-animado {
   background: linear-gradient(135deg, #007bff, #007bff);
-  border: none;
+  border-color: #007bff;
   color: #fff;
   font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 12px;
   box-shadow: 0 0 12px rgba(65, 105, 225, 1);
   transition: 0.3s ease;
 }
 .botao-animado:hover {
-  background-color: #0056b3;
+  background-color: #007bff;
+  color: #fff;
   transform: scale(1.06);
   box-shadow: 0 0 25px rgba(0, 123, 255, 0.8);
 }
@@ -1579,18 +1577,14 @@ h1 {
 /* Botão WhatsApp ou outro (vermelho escuro) */
 .botao-whatsapp {
   background: linear-gradient(135deg, #8b0000, #8b0000);
-  border: none;
+  border-color: #8b0000;
   color: #fff;
   font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 12px;
   box-shadow: 0 0 12px rgba(139, 0, 0, 1);
   transition: 0.3s ease;
 }
 .botao-whatsapp:hover {
-  background-color: #a10000;
+  background-color: #8b0000;
   color: #fff;
-  transform: scale(1.06);
   box-shadow: 0 0 20px #e63946;
 }
-

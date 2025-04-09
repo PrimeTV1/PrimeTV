@@ -1590,7 +1590,7 @@ h1 {
 }
 
 /* Botão "Sobre Nós" (cinza claro) */
-.botao-sobre {
+.sobre {
   background: linear-gradient(135deg, #6c757d, #6c757d);
   border-color: #6c757d;
   color: #fff;
@@ -1598,7 +1598,7 @@ h1 {
   box-shadow: 0 0 12px rgba(108, 117, 125, 0.8);
   transition: 0.3s ease;
 }
-.botao-sobre:hover {
+.sobre:hover {
   background-color: #6c757d;
   color: #fff;
   transform: scale(1.06);

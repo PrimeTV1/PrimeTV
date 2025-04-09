@@ -217,8 +217,8 @@ header button:hover {
 }
 
 .botao-animado {
-  background: linear-gradient(135deg, #ff0033, #cc0000);
-  border-color: #ff0033;
+  background: linear-gradient(135deg, #007bff;, #cc0000);
+  border-color: #007bff;
   color: #fff;
   font-weight: bold;
   box-shadow: 0 0 12px rgba(255, 0, 51, 0.4);
@@ -231,8 +231,8 @@ header button:hover {
 }
 
 .botao-whatsapp {
-  background: linear-gradient(135deg, #25D366, #1faa5d);
-  border-color: #25D366;
+  background: linear-gradient(135deg, ##e63946, #1faa5d);
+  border-color: #e63946;
   color: #fff;
   font-weight: bold;
   box-shadow: 0 0 12px rgba(37, 211, 102, 0.3);

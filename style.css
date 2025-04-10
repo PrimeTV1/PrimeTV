@@ -506,7 +506,7 @@ header h1, section h2 {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.0);
   padding: 20px 0;
-  margin: -30px 0; /* era 40px, agora está mais próximo do topo */
+  margin: -50px 0; /* era 40px, agora está mais próximo do topo */
 }
 
 .slider-track {

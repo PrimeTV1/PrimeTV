@@ -1621,15 +1621,14 @@ h1 {
 
 .devices {
   position: relative;
-  left: 50%;
+  left: 45%;
   right: 50%;
-  width: 170vw; /* Aumenta o fundo em 10% além da largura da tela */
-  margin-left: -55vw; /* -55 para centralizar o novo tamanho */
+  width: 170vw;
+  margin-left: -50vw; /* estava -55vw, agora puxa mais pra direita */
   margin-right: -50vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px 0;
 }
-
 

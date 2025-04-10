@@ -1623,9 +1623,9 @@ h1 {
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -49.1vw; /* era -50vw — agora empurra um pouco pra direita */
+  width: 170vw; /* Aumenta o fundo em 10% além da largura da tela */
+  margin-left: -55vw; /* -55 para centralizar o novo tamanho */
   margin-right: -50vw;
-  width: 130vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

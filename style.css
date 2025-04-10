@@ -1621,7 +1621,7 @@ h1 {
 
 .devices {
   width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  margin-left: calc(-48vw + 50%);
   padding: 60px 20px;
   background-size: cover;
   background-position: center;

@@ -474,12 +474,12 @@ header h1, section h2 {
 
     .slide-track {
       display: flex;
-      width: calc(300px * 12);
+      width: calc(400px * 12);
       animation: scroll 10s linear infinite;
     }
 
     .slide {
-      width: 300px;
+      width: 400px;
       flex-shrink: 0;
       padding: 0 10px;
     }

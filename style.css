@@ -1618,3 +1618,11 @@ h1 {
   background-size: cover;
   background-position: center;
 }
+
+.devices {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0;
+}

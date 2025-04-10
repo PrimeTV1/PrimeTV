@@ -461,7 +461,7 @@ header h1, section h2 {
 
     @media (max-width: 768px) {
       .video-container iframe {
-        width: 100%;
+        width: 95%;
         height: 250px;
       }
     }

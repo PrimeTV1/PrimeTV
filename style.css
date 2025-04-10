@@ -1623,12 +1623,12 @@ h1 {
   position: relative;
   left: 50%;
   right: 50%;
-  width: 200vw;
+  width: 100vw;
   margin-left: -48vw; /* estava -55vw, agora puxa mais pra direita */
   margin-right: -50vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 80px 0;
 }
 

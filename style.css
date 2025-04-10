@@ -466,11 +466,17 @@ header h1, section h2 {
       }
     }
 
-    .banner-slider {
-      overflow: hidden;
-      padding: 20px 0;
-      background: #000;
-    }
+.banner-slider {
+  overflow: hidden;
+  padding: 20px 0;
+  background: #000;
+  width: 100vw; /* ocupa toda a largura da viewport */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
 
     .slide-track {
       display: flex;

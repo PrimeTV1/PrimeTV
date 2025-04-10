@@ -676,7 +676,7 @@ section {
 .video-container {
   position: relative;
   width: 300px;
-  height: 150px;
+  height: 200px;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 12px;

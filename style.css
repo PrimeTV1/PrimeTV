@@ -1622,10 +1622,10 @@ h1 {
 .devices {
   position: relative;
   left: 50%;
-  right: 60%;
+  right: 50%;
   width: 170vw;
   margin-left: -50vw; /* estava -55vw, agora puxa mais pra direita */
-  margin-right: -50vw;
+  margin-right: -48vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1603,16 +1603,3 @@ h1 {
   transform: scale(1.06);
   box-shadow: 0 0 20px rgba(108, 117, 125, 1);
 }
-
-
-
-.secao-com-background {
-  width: 100%;
-  background-color: #f0f0f0; /* ou background-image */
-}
-
-.container-conteudo {
-  max-width: 1400px; /* aumenta o limite do conteúdo aqui */
-  margin: 0 auto;
-  padding: 20px;
-}

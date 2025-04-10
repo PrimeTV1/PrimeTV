@@ -1623,9 +1623,9 @@ h1 {
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -49.2vw; /* era -50vw — agora empurra um pouco pra direita */
+  margin-left: -49.1vw; /* era -50vw — agora empurra um pouco pra direita */
   margin-right: -50vw;
-  width: 100vw;
+  width: 110vw;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

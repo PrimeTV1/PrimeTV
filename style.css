@@ -3,7 +3,7 @@ html {
 }
 
 img, video, iframe {
-  max-width: 130%;
+  max-width: 100%;
   height: auto;
 }
 

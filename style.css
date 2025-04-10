@@ -502,11 +502,12 @@ header h1, section h2 {
 	
 	
 	.slider-marcas {
-  width: 120%;
+  width: 110%;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.0);
   padding: 20px 0;
   margin: -50px 0; /* era 40px, agora está mais próximo do topo */
+  margin-left: -5px		
 }
 
 .slider-track {

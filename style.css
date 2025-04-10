@@ -1624,7 +1624,7 @@ h1 {
   left: 50%;
   right: 50%;
   width: 170vw;
-  margin-left: -45vw; /* estava -55vw, agora puxa mais pra direita */
+  margin-left: -50vw; /* estava -55vw, agora puxa mais pra direita */
   margin-right: -50vw;
   background-size: cover;
   background-position: center;

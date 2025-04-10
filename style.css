@@ -1620,9 +1620,14 @@ h1 {
 }
 
 .devices {
-  width: 120%;
-  margin-left: calc(-48vw + 50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   padding: 60px 20px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: 1;
 }

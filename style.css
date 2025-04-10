@@ -1622,7 +1622,7 @@ h1 {
 .devices {
   position: relative;
   left: 50%;
-  right: 50%;
+  right: 60%;
   width: 170vw;
   margin-left: -50vw; /* estava -55vw, agora puxa mais pra direita */
   margin-right: -50vw;

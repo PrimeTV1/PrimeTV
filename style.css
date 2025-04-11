@@ -1709,3 +1709,8 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.video-section {
+  position: relative;
+  top: -50px; /* Sobe o vídeo */
+}

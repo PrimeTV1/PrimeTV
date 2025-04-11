@@ -47,6 +47,14 @@ setInterval(trocarBanner, 3000);document.querySelectorAll('.faq-question').forEa
 
 
 
+
+
+function loadVideo() {
+  const section = document.querySelector('.video-section');
+  section.innerHTML = `<iframe width="100%" height="315" src="https://www.youtube.com/embed/iUJ9HqLu5_U?autoplay=1&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+}
+
+
 function assinar(plano) {
   alert(`Você escolheu o Plano ${plano}. Um atendente entrará em contato.`);
   // Aqui você pode integrar com um sistema de pagamento ou WhatsApp

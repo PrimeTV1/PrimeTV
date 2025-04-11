@@ -1712,7 +1712,7 @@ h1 {
 
 
 <!-- Botões lado a lado -->
-<div style="text-align: center; margin-top: -10px;">
+<div style="text-align: center; margin-top: -80px;">
   <button class="botao-animado" onclick="scrollToSection('planos')">
     Quero Conhecer os Planos 🛒
   </button>

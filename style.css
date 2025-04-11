@@ -1710,21 +1710,3 @@ h1 {
   background-repeat: no-repeat;
 }
 
-.botoes-superiores {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.botoes-inferior {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.botao-animado,
-.botao-whatsapp,
-.botao-sobre {
-  margin: 5px;
-}
-

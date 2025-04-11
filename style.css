@@ -1710,3 +1710,40 @@ h1 {
   background-repeat: no-repeat;
 }
 
+
+
+
+
+.botao-whatsapp {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.botao-whatsapp:hover {
+  background-color: #218838;
+}
+
+.botao-animado {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao-animado:hover {
+  background-color: #0056b3;
+}

@@ -1572,6 +1572,8 @@ h1 {
   font-weight: bold;
   box-shadow: 0 0 12px rgba(65, 105, 225, 1);
   transition: 0.3s ease;
+  -webkit-text-stroke: 0.8px black; /* contorno preto */
+  text-shadow: 1px 1px 0 black;
 }
 .botao-animado:hover {
   background-color: #007bff;
@@ -1591,6 +1593,8 @@ h1 {
   box-shadow: 0 0 12px rgba(139, 0, 0, 1);
   transition: all 0.3s ease;
   opacity: 1;
+  -webkit-text-stroke: 0.8px black; /* contorno preto */
+  text-shadow: 1px 1px 0 black;
 }
 
 .botao-whatsapp:hover {

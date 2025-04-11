@@ -1569,13 +1569,9 @@ h1 {
   background: linear-gradient(135deg, #007bff, #007bff);
   border-color: #007bff;
   color: #fff;
-  font-weight: 900; /* mais negrito */
-  font-size: 18px;  /* tamanho maior */
-  font-family: 'Arial Black', sans-serif; /* fonte mais legível e bold */
+  font-weight: bold;
   box-shadow: 0 0 12px rgba(65, 105, 225, 1);
   transition: 0.3s ease;
-  -webkit-text-stroke: 0.5px black; /* contorno preto mais leve */
-  text-shadow: 1px 1px 2px black;
 }
 .botao-animado:hover {
   background-color: #007bff;
@@ -1589,14 +1585,17 @@ h1 {
   background: linear-gradient(135deg, #2ecc71, #2ecc71);
   border-color: #2ecc71;
   color: #fff;
-  font-weight: 900; /* mais negrito */
-  font-size: 20px;  /* tamanho maior */
-  font-family: 'Arial Black', sans-serif; /* fonte mais legível e bold */
-  text-shadow: 1px 1px 2px black;
+  font-weight: 700;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 12px rgba(139, 0, 0, 1);
   transition: all 0.3s ease;
   opacity: 1;
-  -webkit-text-stroke: 0.5px black; /* contorno preto mais leve */
+}
+
+.botao-whatsapp:hover {
+  opacity: 0.85; /* Esmaece levemente */
+  box-shadow: 0 0 20px #;
 }
 
 .botao-whatsapp:hover {

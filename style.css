@@ -1710,5 +1710,9 @@ h1 {
   background-repeat: no-repeat;
 }
 
-
+.botao-animado,
+.botao-whatsapp,
+.botao-sobre {
+  margin: 5px;
+}
 

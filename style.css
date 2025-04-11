@@ -1722,3 +1722,9 @@ h1 {
   text-align: center;
 }
 
+.botao-animado,
+.botao-whatsapp,
+.botao-sobre {
+  margin: 5px;
+}
+

@@ -1722,3 +1722,42 @@ h1 {
   background-color: #2ecc71; /* verde vibrante ideal para ação */
   color: white;
 }
+
+
+
+
+
+.video-section {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  margin: -120px auto 30px auto; /* Mesmo margin-top que você usava */
+  cursor: pointer;
+}
+
+.video-thumb {
+  width: 100%;
+  height: 230px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  display: block;
+}
+
+.video-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: white;
+  text-shadow: 0 0 10px #000;
+  pointer-events: none;
+}
+
+
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Aumenta a legibilidade */
+}

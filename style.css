@@ -1582,15 +1582,15 @@ h1 {
 
 /* Botão WhatsApp ou outro (vermelho escuro) */
 .botao-whatsapp {
-  background: linear-gradient(135deg, #8b0000, #8b0000);
-  border-color: #8b0000;
+  background: linear-gradient(135deg, #2ecc71, #2ecc71);
+  border-color: #2ecc71;
   color: #fff;
   font-weight: bold;
   box-shadow: 0 0 12px rgba(139, 0, 0, 1);
   transition: 0.3s ease;
 }
 .botao-whatsapp:hover {
-  background-color: #8b0000;
+  background-color: #2ecc71;
   color: #fff;
   box-shadow: 0 0 20px #e63946;
 }

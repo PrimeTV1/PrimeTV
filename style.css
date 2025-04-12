@@ -1730,13 +1730,13 @@ h1 {
 .video-section {
   position: relative;
   width: 100%;
-  max-width: 420px; /* Aumente aqui a largura desejada */
+  max-width: 340px; /* Aumente aqui a largura desejada */
   margin: -120px auto 30px auto;
   cursor: pointer;
 }
 
 .video-thumb {
-  width: 100%;
+  width: 340px;
   height: 230px; /* Mantém a altura fixa */
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.5);

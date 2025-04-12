@@ -1610,6 +1610,7 @@ h1 {
   font-weight: bold;
   box-shadow: 0 0 12px rgba(108, 117, 125, 0.8);
   transition: 0.3s ease;
+  margin-left: -5px;
 }
 .botao-sobre:hover {
   background-color: #6c757d;
@@ -1751,4 +1752,13 @@ body {
   font-family: 'Inter', 'Roboto', sans-serif;
   color: white;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Aumenta a legibilidade */
+}
+
+.botoes-centro {
+  text-align: center;
+  margin-top: -90px;
+}
+
+.botao-espacado {
+  margin-left: 0px;
 }

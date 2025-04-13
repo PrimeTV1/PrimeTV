@@ -1793,3 +1793,15 @@ body {
 .whatsapp-button:hover img {
   transform: scale(1.1);
 }
+
+animation: pulse 2s infinite;
+
+
+bottom: 80px;
+
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}

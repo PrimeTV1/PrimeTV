@@ -76,7 +76,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(https://media.discordapp.net/attachments/623416032035471361/1358466238057156718/BANNER_OPCIONAL_EM_4K.jpg?ex=67f54346&is=67f3f1c6&hm=e78c55361a895c4f5e577a442515736a33f0f5cb973384b3a667c2b2aa698992&=&format=webp&width=1133&height=598) no-repeat center center/cover;
+  background: url(https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/490064337_122150498210538821_8586852380417489196_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gq6oEog4EYYQ7kNvwEenA5A&_nc_oc=AdlcwIDWCxVBIrOmeRpeeFRW2V06ONt7KxLdGbd_Up1ZUHzQUC1eQDW9sqJGnGD5iWU&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=A0gBLeyMtbwZXvrkB56_Lg&oh=00_AfH30DXmIRrHw26AWh8yMvfsZFoIwwaobxsynDz5M5s_pQ&oe=680190BF) no-repeat center center/cover;
   filter: none;
   z-index: -3;
   transition: background-image 1s ease-in-out;
@@ -1392,7 +1392,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/490064337_122150498210538821_8586852380417489196_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=cxS0CWNMUTUQ7kNvwH3A4x6&_nc_oc=Adnlo-j_vcEJ-NtqW1rKlBxiAfdT91u7Ny-ktPXYpE8Dk80iA5iK3elI-8Db1SXwIaw&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=fqzC-wDm08_uJC3lsATvjA&oh=00_AfF7-P3qCvGnxYgh2Oi1KoD9sBMszDOYGip7TJoKQKCs0w&oe=67FBA1FF') no-repeat center center fixed;
+  background: url('https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/490064337_122150498210538821_8586852380417489196_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gq6oEog4EYYQ7kNvwEenA5A&_nc_oc=AdlcwIDWCxVBIrOmeRpeeFRW2V06ONt7KxLdGbd_Up1ZUHzQUC1eQDW9sqJGnGD5iWU&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=A0gBLeyMtbwZXvrkB56_Lg&oh=00_AfH30DXmIRrHw26AWh8yMvfsZFoIwwaobxsynDz5M5s_pQ&oe=680190BF') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }

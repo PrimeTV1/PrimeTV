@@ -76,7 +76,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('') no-repeat center center/cover;
+  background: url('img/introbanner.png') no-repeat center center/cover;
   filter: none;
   z-index: -3;
   transition: background-image 1s ease-in-out;
@@ -1392,7 +1392,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('img/introbanner.png') no-repeat center center fixed;
+  background: url() no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -1853,6 +1853,8 @@ body {
   animation: pulsar 3s ease-in-out infinite;
 }
 
+
+
 .dark-overlay {
   position: fixed; /* sempre cobre a tela toda */
   top: 0;
@@ -1863,6 +1865,3 @@ body {
   z-index: 1; /* ajuste conforme a posição desejada no layout */
   pointer-events: none; /* permite interação com os elementos abaixo */
 }
-
-
-

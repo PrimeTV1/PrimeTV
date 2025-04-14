@@ -1854,4 +1854,15 @@ body {
 }
 
 
+.dark-overlay {
+  position: fixed; /* sempre cobre a tela toda */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* escurecimento ajustável */
+  z-index: 1; /* ajuste conforme a posição desejada no layout */
+  pointer-events: none; /* permite interação com os elementos abaixo */
+}
+
 

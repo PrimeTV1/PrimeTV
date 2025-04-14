@@ -1843,7 +1843,6 @@ body {
   animation: scroll 25s linear infinite; /* velocidade aumentada */
 }
 
-
 @keyframes pulsar {
   0% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.03); opacity: 0.95; }
@@ -1853,3 +1852,17 @@ body {
 .botao-profissional {
   animation: pulsar 3s ease-in-out infinite;
 }
+
+.dark-overlay {
+  position: fixed; /* sempre cobre a tela toda */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2); /* escurecimento ajustável */
+  z-index: 1; /* ajuste conforme a posição desejada no layout */
+  pointer-events: none; /* permite interação com os elementos abaixo */
+}
+
+
+

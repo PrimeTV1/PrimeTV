@@ -1392,7 +1392,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url(https://scontent-gru2-1.xx.fbcdn.net/v/t39.30808-6/490064337_122150498210538821_8586852380417489196_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gq6oEog4EYYQ7kNvwEenA5A&_nc_oc=AdlcwIDWCxVBIrOmeRpeeFRW2V06ONt7KxLdGbd_Up1ZUHzQUC1eQDW9sqJGnGD5iWU&_nc_zt=23&_nc_ht=scontent-gru2-1.xx&_nc_gid=-Yg64Zqgkq3v5WbqrvJKeQ&oh=00_AfFgLaQEgnp4tXD_szg5KyFuUumDUPHgKgYMneGknykEPg&oe=680190BF) no-repeat center center fixed;
+  background: url('img/introbanner.png') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }

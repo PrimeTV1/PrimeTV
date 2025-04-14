@@ -21,8 +21,8 @@ const banner = document.getElementById("banner");
 
 // Lista com 6 imagens de banners
 const imagens = [
-  "url('img/introbanner.png')",
   "url('img/banner2.png')",
+  "url('img/introbanner.png')",
   "url('img/banner3.png')",
   "url('img/banner4.png')",
   "url('img/banner5.png')",

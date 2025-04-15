@@ -23,10 +23,6 @@ const banner = document.getElementById("banner");
 const imagens = [
   "url('img/banner2.png')",
   "url('img/introbanner.png')",
-  "url('img/banner3.png')",
-  "url('img/banner4.png')",
-  "url('img/banner5.png')",
-  "url('img/bannerfinal.jpg')",
 ];
 
 let index = 0;

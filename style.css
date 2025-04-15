@@ -1388,7 +1388,6 @@ html, body {
 
 
 
-/* CSS ATUALIZADO */
 body {
   margin: 0;
   padding: 0;
@@ -1757,7 +1756,7 @@ body {
 
 .botoes-centro {
   text-align: center;
-  margin-top: -90px;
+  margin-top: -130px;
 }
 
 .botao-espacado {
@@ -1867,3 +1866,18 @@ body {
 }
 
 
+
+#banner {
+  background-image: url('img/introbanner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  filter: brightness(0.6); /* quanto menor, mais escuro */
+}
+
+.titulo {
+  font-size: 1.3rem; /* aumenta o tamanho da fonte */
+  margin-top: 5px; /* desce o título */
+  color: white; /* garante legibilidade */
+  text-align: center; /* opcional, se quiser centralizado */
+}

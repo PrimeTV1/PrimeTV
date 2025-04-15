@@ -20,10 +20,7 @@ window.addEventListener("scroll", revealOnScroll);
 const banner = document.getElementById("banner");
 
 // Lista com 6 imagens de banners
-const imagens = [
-  "url('img/banner2.png')",
-  "url('img/banner3.png')",
-];
+
 
 let index = 0;
 

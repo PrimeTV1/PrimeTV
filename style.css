@@ -1389,7 +1389,14 @@ html, body {
 
 
 /* CSS ATUALIZADO */
-
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('img/introbanner.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.7);

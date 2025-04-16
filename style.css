@@ -1920,7 +1920,7 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg) translateX(-100%);
-  animation: shine 3.5s infinite;
+  animation: shine 2.5s infinite;
   will-change: transform;
   z-index: 2;
   pointer-events: none;
@@ -1979,4 +1979,71 @@ body {
   will-change: transform;
   z-index: 2;
   pointer-events: none;
+}
+
+
+/* Brilho suave para links da navbar */
+.nav-shine {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg) translateX(-100%);
+  animation: shine 4s infinite;
+  will-change: transform;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Brilho sutil sobre o logo */
+.logo-brilhante {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.logo-brilhante::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg) translateX(-100%);
+  animation: shine 6s infinite;
+  will-change: transform;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Reaproveita a mesma keyframe para todos */
+@keyframes shine {
+  0% {
+    transform: skewX(-25deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-25deg) translateX(200%);
+  }
 }

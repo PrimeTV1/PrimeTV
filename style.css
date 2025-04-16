@@ -1981,6 +1981,10 @@ body {
   pointer-events: none;
 }
 
+.nav-links {
+  margin-top: -30px; /* ajuste o valor conforme necessário */
+}
+
 
 
 

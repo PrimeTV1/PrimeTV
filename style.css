@@ -2038,12 +2038,3 @@ body {
   pointer-events: none;
 }
 
-/* Reaproveita a mesma keyframe para todos */
-@keyframes shine {
-  0% {
-    transform: skewX(-25deg) translateX(-100%);
-  }
-  100% {
-    transform: skewX(-25deg) translateX(200%);
-  }
-}

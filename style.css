@@ -1889,12 +1889,28 @@ body {
   z-index: 1;
 }
 
-/* Shine effect */
+/* Shine animation (única definição) */
+@keyframes shine {
+  0% {
+    transform: skewX(-25deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-25deg) translateX(200%);
+  }
+}
+
+/* Botão Profissional */
+.botao-profissional {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
 .botao-profissional::before {
   content: '';
   position: absolute;
   top: -50%;
-  left: -75%;
+  left: 0;
   width: 50%;
   height: 200%;
   background: linear-gradient(
@@ -1903,34 +1919,25 @@ body {
     rgba(255, 255, 255, 0.6) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  transform: skewX(-25deg);
+  transform: skewX(-25deg) translateX(-100%);
   animation: shine 3.5s infinite;
+  will-change: transform;
   z-index: 2;
   pointer-events: none;
 }
 
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
-
-
+/* Botão Verde */
 .btn-green {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-/* Shine effect para btn-green */
 .btn-green::before {
   content: '';
   position: absolute;
   top: -50%;
-  left: -75%;
+  left: 0;
   width: 50%;
   height: 200%;
   background: linear-gradient(
@@ -1939,35 +1946,14 @@ body {
     rgba(255, 255, 255, 0.6) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  transform: skewX(-25deg);
+  transform: skewX(-25deg) translateX(-100%);
   animation: shine 1.5s infinite;
+  will-change: transform;
   z-index: 2;
   pointer-events: none;
 }
 
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
-
-
-
-
-/* Animação geral */
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
-}
-
-
+/* Título com Shine */
 .titulo-shine {
   position: relative;
   display: inline-block;
@@ -1975,12 +1961,11 @@ body {
   z-index: 1;
 }
 
-/* Brilho passando */
 .titulo-shine::before {
   content: '';
   position: absolute;
   top: -50%;
-  left: -75%;
+  left: 0;
   width: 50%;
   height: 200%;
   background: linear-gradient(
@@ -1989,18 +1974,9 @@ body {
     rgba(255, 255, 255, 0.5) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  transform: skewX(-25deg);
+  transform: skewX(-25deg) translateX(-100%);
   animation: shine 4.5s infinite;
-  pointer-events: none;
+  will-change: transform;
   z-index: 2;
-}
-
-/* Reutilizando a mesma animação */
-@keyframes shine {
-  0% {
-    left: -75%;
-  }
-  100% {
-    left: 125%;
-  }
+  pointer-events: none;
 }

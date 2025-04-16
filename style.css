@@ -1990,7 +1990,7 @@ body {
     rgba(255, 255, 255, 0) 100%
   );
   transform: skewX(-25deg);
-  animation: shine 1.5s infinite;
+  animation: shine 4.5s infinite;
   pointer-events: none;
   z-index: 2;
 }

@@ -1756,7 +1756,7 @@ body {
 
 .botoes-centro {
   text-align: center;
-  margin-top: -130px;
+  margin-top: -180px;
 }
 
 .botao-espacado {
@@ -1880,4 +1880,179 @@ body {
   margin-top: 5px; /* desce o título */
   color: white; /* garante legibilidade */
   text-align: center; /* opcional, se quiser centralizado */
+}
+
+
+.botao-profissional {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Shine effect */
+.botao-profissional::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 2s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+.btn-green {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Shine effect para btn-green */
+.btn-green::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 2s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+
+
+/* === Shine para logo === */
+.logo-brilhante {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo-brilhante::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s infinite;
+  pointer-events: none;
+}
+
+/* === Shine para botões de navegação === */
+.nav-shine {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  z-index: 1;
+}
+
+.nav-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 4.5s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Animação geral */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+.titulo-shine {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Brilho passando */
+.titulo-shine::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shine 3s infinite;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Reutilizando a mesma animação */
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
 }

@@ -1392,7 +1392,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('https://cdn.discordapp.com/attachments/623423800935055363/1362678096108585111/introbanner.png?ex=6803445f&is=6801f2df&hm=fbf5ddbf3edf4d15ba8018c403f321b30aede4f83fa1b8c079a17298f5c620f4&') no-repeat center center fixed;
+  background: url('img/introbanner.png') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }

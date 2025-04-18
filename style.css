@@ -1732,7 +1732,7 @@ h1 {
   position: relative;
   width: 100%;
   max-width: 340px; /* Aumente aqui a largura desejada */
-  margin: -155px auto 30px auto;
+  margin: -175px auto 30px auto;
   cursor: pointer;
 }
 
@@ -1839,10 +1839,8 @@ body {
 
 .slider-track {
   display: flex;
-  width: calc(80px * 12);
+  width: calc(350px * 12);
   animation: scroll 30s linear infinite; /* velocidade aumentada */
-  animation: none !important; /* remove qualquer animação */
-  margin-left: -40px	
 }
 
 @keyframes pulsar {
@@ -1989,7 +1987,4 @@ body {
 .logo img {
   margin-top: 10px;
 }
-
-
-
 

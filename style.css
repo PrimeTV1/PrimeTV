@@ -1839,7 +1839,7 @@ body {
 
 .slider-track {
   display: flex;
-  width: calc(350px * 12);
+  width: calc(280px * 12);
   animation: scroll 30s linear infinite; /* velocidade aumentada */
 }
 

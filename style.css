@@ -1840,7 +1840,7 @@ body {
 .slider-track {
   display: flex;
   width: calc(350px * 12);
-  animation: scroll 22s linear infinite; /* velocidade aumentada */
+  animation: scroll 30s linear infinite; /* velocidade aumentada */
 }
 
 @keyframes pulsar {

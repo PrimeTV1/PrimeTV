@@ -1899,6 +1899,48 @@ body {
 }
 
 
+.slider-marcas {
+  overflow: hidden;
+  width: 100%;
+  padding: 10px 0;
+  background: #000; /* opcional: fundo escuro fica bonito com os logos */
+}
+
+.slider-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+  align-items: center;
+}
+
+.slider-track img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile: reduz tamanho e animação */
+@media (max-width: 768px) {
+  .slider-track img {
+    height: 30px;
+  }
+
+  .slider-track {
+    gap: 15px;
+    animation: scroll 30s linear infinite;
+  }
+}
+
 
 
 

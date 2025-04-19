@@ -1840,14 +1840,10 @@ body {
 .slider-track {
   display: flex;
   width: calc(350px * 12);
-  animation: scroll 30s linear infinite; /* velocidade aumentada */
+  animation: none !important;
 }
 
-@keyframes pulsar {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.03); opacity: 0.95; }
-  100% { transform: scale(1); opacity: 1; }
-}
+
 
 .botao-profissional {
   animation: pulsar 3s ease-in-out infinite;
@@ -1988,3 +1984,82 @@ body {
   margin-top: 10px;
 }
 
+
+
+#planos {
+  padding: 40px 20px;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.plan {
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+/* 👇 Responsividade para celular */
+@media (max-width: 768px) {
+  .plan {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.plan ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.plan ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.plan p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}

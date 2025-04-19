@@ -942,15 +942,7 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Animação do Scroll */
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+
 
 /* Slide Duplicado para Movimento Infinito */
 .slide-track:after {

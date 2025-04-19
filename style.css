@@ -518,7 +518,7 @@ header h1, section h2 {
 
 .slider-track {
   display: flex;
-  width: calc(250px * 12);
+  width: calc(550px * 12);
   animation: scroll 30s linear infinite;
 }
 

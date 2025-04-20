@@ -511,14 +511,14 @@ header h1, section h2 {
   width: 110%;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.1);
-  padding: 0px 0;
+  padding: 10px 0;
   margin: -50px 0;
   margin-left: -5%; /* move o slider mais pra esquerda */
 }
 
 .slider-track {
   display: flex;
-  width: calc(550px * 12);
+  width: calc(350px * 12);
   animation: scroll 30s linear infinite;
 }
 

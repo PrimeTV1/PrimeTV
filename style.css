@@ -2201,3 +2201,15 @@ body {
 
 
 
+
+.video-bg {
+  position: fixed;        /* fixa o vídeo no fundo da tela */
+  top: 0;
+  left: 0;
+  width: 100vw;           /* ocupa largura total */
+  height: 100vh;          /* ocupa altura total */
+  object-fit: cover;      /* cobre a área sem distorcer */
+  z-index: -1;            /* envia para trás */
+  pointer-events: none;   /* impede que o vídeo bloqueie cliques */
+}
+

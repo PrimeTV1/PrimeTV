@@ -1942,32 +1942,7 @@ body {
 }
 
 /* Título com Shine */
-.titulo-shine {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  z-index: 1;
-}
 
-.titulo-shine::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: 0;
-  width: 50%;
-  height: 200%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.5) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-25deg) translateX(-100%);
-  animation: shine 4.5s infinite;
-  will-change: transform;
-  z-index: 2;
-  pointer-events: none;
-}
 
 .nav-links {
   margin-top: -30px; /* ajuste o valor conforme necessário */

@@ -2206,3 +2206,22 @@ body {
 .botoes-centro .botao-profissional {
   animation: pulse 2s infinite ease-in-out;
 }
+
+
+.titulo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
+}
+
+.titulowpp {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: green;
+  text-align: center;
+  font-size: 1.rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
+}

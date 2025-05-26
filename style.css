@@ -2171,7 +2171,7 @@ body {
   }
   
   .video-section {
-  margin-top: -120px; /* ajuste esse valor como quiser */
+  margin-top: -5px; /* ajuste esse valor como quiser */
 }
 
 
@@ -2213,7 +2213,7 @@ body {
   font-weight: 800;
   color: white;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
 }
 
@@ -2221,6 +2221,15 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
   color: green;
+  text-align: center;
+  font-size: 0.9rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
+}
+
+.carousel-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: white;
   text-align: center;
   font-size: 1.rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */

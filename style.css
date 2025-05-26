@@ -2234,3 +2234,26 @@ body {
   font-size: 1.rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
 }
+
+.botoes-centro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Espaço entre os botões */
+}
+
+.botao-profissional {
+  padding: 14px 24px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .botoes-centro {
+    flex-direction: column;
+    gap: 15px; /* Aumenta o espaço no celular */
+    margin-top: -100px; /* Ajuste se necessário */
+  }
+}

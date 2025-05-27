@@ -175,18 +175,30 @@ src="https://www.facebook.com/tr?id=1255175626187622&ev=PageView&noscript=1"
     🚀 Quero Meu Acesso
   </a>
 	  
-<!-- Seção do vídeo com thumbnail HD, nas mesmas configurações -->
-<div class="video-section" onclick="loadVideo()">
-  <img class="video-thumb" <img src="img/ytcapa.png" alt="Capa do Video YT" />
-  <div class="video-play-button">▶️</div>
-</div>
-
-
-<!-- Título acima do vídeo -->
-<h2 style="color: #8b0000; font-size: 2rem; text-align: center; margin-top: -120px; margin-bottom: 10px;">
-<h2 class="titulo-glow">
-  Video Explicativo Prime TV ⬆
+<!-- Título -->
+<h2 class="titulo-glow" style="color: #ffffff; font-size: 1.5rem; text-align: center; margin-top: 40px; margin-bottom: 10px;">
+  Video Explicativo Prime TV ⬇
 </h2>
+
+<!-- Container do vídeo -->
+<div class="video-section" onclick="loadVideo()" id="videoSection">
+  <img class="video-thumb" src="img/ytcapa.png" alt="Capa do Vídeo YT" />
+</div>
+<script>
+function loadVideo() {
+  const section = document.getElementById("videoSection");
+  section.innerHTML = `
+    <iframe 
+      src="https://www.youtube.com/embed/iUJ9HqLu5_U?autoplay=1&rel=0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="width: 100%; height: 100%;"
+    ></iframe>
+  `;
+}
+</script> 
 
 
 

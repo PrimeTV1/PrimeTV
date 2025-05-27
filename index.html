@@ -41,16 +41,33 @@ src="https://www.facebook.com/tr?id=1255175626187622&ev=PageView&noscript=1"
 <!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">
-    <img src="img/logonav.png" alt="logonav" class="logo-brilhante"/> 
+    <img src="img/logonav.png" alt="logonav" class="logo-brilhante"/>
   </div>
-  <ul class="nav-links">
-    <li><a href="#sobre" class="nav-shine"style="margin-right: -15px;">Sobre</a></li>
+  <div class="menu-icon" onclick="toggleMenu()">
+    &#9776;
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#sobre" class="nav-shine">Sobre</a></li>
     <li><a href="#planos" class="nav-shine">Planos</a></li>
     <li><a href="#download" class="nav-shine">Download</a></li>
-    <li><a href="https://www.tiktok.com/@primetv_oficial" class="nav-shine" style="margin-left: -15px;">TikTok</a></li>
+    <li><a href="https://www.tiktok.com/@primetv_streaming" class="nav-shine">@TikTok</a></li>
   </ul>
 </nav>
 
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+  }
+
+  // Fechar o menu quando clicar em qualquer link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.remove('active');
+    });
+  });
+</script>
   <!-- HEADER -->
   <header>	 
     <h1 class="titulo titulo-shine"style="margin-top: 25px;">TV, FILMES E SÉRIES ILIMITADOS — APENAS R$ 29,90/MÊS!</h1> 

@@ -117,8 +117,42 @@ setTimeout(() => {
 </script>	
   <!-- HEADER -->
   <header>	 
-    <h1 class="titulo titulo-shine"style="margin-top: 25px;">TV, FILMES E SÉRIES ILIMITADOS — APENAS R$ 29,90/MÊS!</h1> 
-    <h1 class="titulowpp"style="margin-top: -40px;">TV Smart, Celular, TV Box e+</h1>
+<h1 class="titulo titulo-shine" id="textoDigitado" style="margin-top: 25px;"></h1>
+<h1 class="titulowpp" style="margin-top: -40px;">TV Smart, Celular, TV Box e+</h1>
+
+<script>
+  const texto = "TV, FILMES E SÉRIES ILIMITADOS — POR APENAS R$ 29,90/MÊS!";
+  const elemento = document.getElementById("textoDigitado");
+  let i = 0;
+  let apagando = false;
+  let pausado = false;
+
+  function digitarApagar() {
+    if (!apagando && !pausado) {
+      elemento.textContent = texto.substring(0, i++);
+      if (i > texto.length) {
+        pausado = true;
+        setTimeout(() => {
+          pausado = false;
+          apagando = true;
+          digitarApagar();
+        }, 30000); // 30 segundos de pausa
+        return;
+      }
+    } else if (apagando) {
+      elemento.textContent = texto.substring(0, i--);
+      if (i === 0) {
+        apagando = false;
+      }
+    }
+
+    if (!pausado) {
+      setTimeout(digitarApagar, apagando ? 30 : 80);
+    }
+  }
+
+  digitarApagar();
+</script>
 <header> 
 <!-- Botões lado a lado -->
 <div class="botoes-centro"style="margin-top: -140px;">

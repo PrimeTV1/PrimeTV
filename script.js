@@ -84,4 +84,12 @@ setTimeout(() => {
 }, 2000);
 
 
+<script>
+  function toggleMenu() {
+    const navLinks = document.getElementById('navLinks');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
+
 

@@ -50,14 +50,14 @@ function loadVideo() {
 const notificacoes = [
   { nome: "Carlos Pavanato", mensagem: "✔ @Carlos Prado, Assinou um Plano Mensal Agora!" },
   { nome: "Ana12 Ribeiro", mensagem: "✔ @Ana Julia12, Assinou o Pacote Família com 4 telas!" },
-  { nome: "Rafael Silva33", mensagem: "✔ @Rafael, Assinou o Pacote Esportes +Filmes! há 5 Minutos" },
-  { nome: "Juliana Costa53", mensagem: "✔ @Julianas2, Assinou o plano Anual com 20% de Desconto! há 1 minuto" },
+  { nome: "Rafael Silva33", mensagem: "✔ @Rafael, Assinou o Pacote Esportes +Filmes!" },
+  { nome: "Juliana Costa53", mensagem: "✔ @Julianas2, Assinou o plano Anual com 20% de Desconto!" },
   { nome: "Marcos Montenegro", mensagem: "🎁 @Marcos, Ganhou 2 Meses Grátis no Plano Anual!" },
   { nome: "Fernanda Lima034", mensagem: "✔ @Fernanda, Assinou um Plano Tri-Mestral!" },
-  { nome: "Eduardo Machado", mensagem: "🎁 @Eduardo32, Solicitou 3 Horas de Teste Gratuito! há 30 Segundos" },
+  { nome: "Eduardo Machado", mensagem: "🎁 @Eduardo32, Solicitou 3 Horas de Teste Gratuito!" },
   { nome: "Camila Oliveira", mensagem: "✔@Camila, Assinou o Plano Mensal Premium Agora!" },
   { nome: "João Souza", mensagem: "✔ @João21, Assinou o plano Premium com 2MIL Canais 4K!" },
-  { nome: "Larissa Rodrigues", mensagem: "✔ @Larissa, Assinou o Pacote Canais TV +Novelas e Séries ilimitadas FHD!" }
+  { nome: "Larissa Rodrigues", mensagem: "✔ @Larissa, Assinou o Pacote ilimitado FULL HD!" }
 ];
 
 function mostrarNotificacaoPersonalizada() {

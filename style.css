@@ -2555,3 +2555,41 @@ body {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
 }
 
+@media (max-width: 768px) {
+  .botoes-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -100px; /* Ajuste vertical se quiser */
+  }
+
+  .botao-profissional {
+    white-space: nowrap; /* 🔥 Impede quebrar linha */
+    padding: 14px 24px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+    width: auto; /* 🔥 Ajusta o tamanho automaticamente */
+    max-width: 90%;
+  }
+
+  .botao-whatsapp {
+    background-color: #25D366;
+  }
+
+  .botao-planos {
+    background-color: #E60023;
+  }
+
+  .botao-profissional:hover {
+    filter: brightness(0.9);
+  }
+}

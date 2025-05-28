@@ -2361,3 +2361,171 @@ body {
   text-shadow: 0 0 10px black;
   pointer-events: none;
 }
+
+
+/* Estilo da seção de conteúdo IPTV */
+.conteudo-iptv {
+  background-color: ;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.conteudo-iptv h2 {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.grid-conteudo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #2a0a0a;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+/* Botão WhatsApp */
+.botao-centro {
+  margin-top: 40px;
+}
+
+.btn-whatsapp {
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: linear-gradient(to right, #cc0000, #990000);
+}
+
+
+/* Seção Hero */
+.hero-iptv {
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.container-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -120px; /* Faz a seção subir */
+}
+
+.imagem-hero img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Texto */
+.logo-hero {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.texto-hero h1 {
+  font-size: 2rem;
+  margin: 5px 0;
+}
+
+.texto-hero h2 {
+  font-size: 1.8rem;
+  margin: 15px 0;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.texto-hero h2 span {
+  background-color: #fff;
+  color: red;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.texto-hero p {
+  color: #ddd;
+  font-size: 1rem;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* Botão */
+.btn-hero {
+  background: linear-gradient(to right, #ff0000, #cc0000);
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn-hero:hover {
+  background: linear-gradient(to right, #cc0000, #990000);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .container-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    text-align: left;
+  }
+
+  .imagem-hero {
+    flex: 1;
+  }
+
+  .texto-hero {
+    flex: 1;
+  }
+
+  .texto-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .texto-hero h2 {
+    font-size: 2.2rem;
+  }
+}
+
+

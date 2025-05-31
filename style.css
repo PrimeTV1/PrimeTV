@@ -2529,7 +2529,7 @@ body {
   .botao-profissional {
     white-space: nowrap; /* 🔥 Impede quebrar linha */
     padding: 14px 24px;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 700;
     border-radius: 50px;
     border: none;
@@ -2553,4 +2553,48 @@ body {
   .botao-profissional:hover {
     filter: brightness(0.9);
   }
+}
+
+
+.botao-sobre {
+  white-space: nowrap;       /* Impede quebra de linha */
+  font-size: 14px;           /* Reduza se necessário para caber */
+  padding: 14px 22px;         /* Ajuste o espaço interno */
+  max-width: 100%;           /* Garante que respeite a largura do container */
+  overflow: hidden;
+  text-overflow: ellipsis;   /* Caso fique muito apertado */
+}
+
+.botao-profissional {
+  background-color: #25D366;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.botao-sobre {
+  background-color: #25D366;
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.titulo-gloww { 
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.titulowpp { 
+  text-shadow:
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }

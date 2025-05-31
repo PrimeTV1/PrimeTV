@@ -917,7 +917,7 @@ html, body {
 /* Track de Slides */
 .slide-track {
   display: flex;
-  width: calc(300px * 12); /* Ajuste conforme o número de slides */
+  width: calc(800px * 12); /* Ajuste conforme o número de slides */
   animation: scroll 55s linear infinite;
 }
 

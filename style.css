@@ -2529,7 +2529,7 @@ body {
   .botao-profissional {
     white-space: nowrap; /* 🔥 Impede quebrar linha */
     padding: 14px 24px;
-    font-size: 0.9rem;
+    font-size: 1.rem;
     font-weight: 700;
     border-radius: 50px;
     border: none;

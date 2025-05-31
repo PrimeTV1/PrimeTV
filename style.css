@@ -2189,23 +2189,6 @@ body {
 }
 
 
-/* Efeito pulsante leve */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Aplica o efeito nos dois botões */
-.botoes-centro .botao-profissional {
-  animation: pulse 2s infinite ease-in-out;
-}
 
 
 .titulo {

@@ -817,6 +817,20 @@ setTimeout(() => {
       </div>
     </div>
   </div>
+  
+  <!-- Final do HTML -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        item.classList.toggle('active');
+      });
+    });
+  });
+</script>
+</body>
+</html>
 </section>
 
 <div class="garantia-prime" style="background-image: url('img/fundored.png');">

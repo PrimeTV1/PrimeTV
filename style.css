@@ -2589,7 +2589,6 @@ body {
 .meu-slider-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px; /* <<< padding lateral para todos dispositivos */
   text-align: center;
 }
 
@@ -2598,7 +2597,10 @@ body {
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 10px 10px 10px 10px; /* <<< padding interno no carrossel */
+  padding-left: 20px;
+  padding-right: 20px;
+  scroll-padding-left: 20px;
+  scroll-padding-right: 20px;
 }
 
 .meu-slider::-webkit-scrollbar {
@@ -2611,7 +2613,7 @@ body {
   max-width: 250px;
   aspect-ratio: 3 / 4;
   border-radius: 10px;
-  background-size: cover;
+  background-size: contain; /* 👈 evita que imagem seja cortada */
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -2621,7 +2623,7 @@ body {
   background-color: #333;
 }
 
-/* Texto nos cards */
+/* Conteúdo interno */
 .meu-card h3 {
   font-size: 1.4em;
   margin: 0;
@@ -2633,7 +2635,6 @@ body {
   line-height: 1.4;
 }
 
-/* Botões de controle */
 .meu-slider-controls {
   margin-top: 15px;
   display: flex;
@@ -2657,17 +2658,8 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* 📱 Ajuste para celulares */
 @media (max-width: 768px) {
   .meu-card {
     max-width: 80%;
-  }
-
-  .meu-slider-container {
-    padding: 0 25px; /* aumenta margem nas laterais em celulares */
-  }
-
-  .meu-slider {
-    padding: 10px 15px;
   }
 }

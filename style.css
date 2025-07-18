@@ -2578,3 +2578,86 @@ body {
     -1px  1px 0 #000,
      1px  1px 0 #000;
 }
+
+.meu-slider-wrapper {
+  width: 100%;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+
+.meu-slider-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.meu-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.meu-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.meu-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 3 / 4; /* mantém proporção sem altura fixa */
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+/* Conteúdo interno opcional */
+.meu-card h3 {
+  font-size: 1.4em;
+  margin: 0;
+}
+
+.meu-card p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.meu-slider-controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.meu-slider-btn {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.meu-slider-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsivo: celulares */
+@media (max-width: 768px) {
+  .meu-card {
+    max-width: 80%;
+  }
+}

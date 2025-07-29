@@ -583,84 +583,214 @@ setTimeout(() => {
 
 
 
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.planos-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 12px; /* espaço entre os cards */
+  padding: 0 8px;
+}
+
+/* Card do plano */
+.plano {
+  background: #111;
+  color: white;
+  border: 1px solid #333; /* Borda sutil */
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 280px;
+  transition: none; /* sem efeitos visuais */
+}
+
+/* Título */
+.plano h3 {
+  font-size: 20px;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+/* Lista de benefícios */
+.plano ul {
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+  text-align: left;
+}
+
+.plano ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 14px;
+}
+
+.plano ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #00ff00;
+}
+
+/* Desconto */
+.desconto {
+  background: #fff;
+  color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+  display: inline-block;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+/* Preço */
+.preco {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+/* Botão */
+.botao-comprar {
+  display: inline-block;
+  background: #ff1a1a;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Responsivo: 4 colunas no PC */
+@media (min-width: 1024px) {
+  .plano {
+    width: calc(24% - 12px);
+  }
+}
+
+/* Responsivo: 2 colunas em tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plano {
+    width: calc(48% - 12px);
+  }
+}
+
+/* Responsivo: 1 por linha no celular */
+@media (max-width: 767px) {
+  .plano {
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+</style>
 <section id="planos">
-  <div class="plans">
- <div class="plan">
-  <div class="plan-image">
-    <img src="img/plano1.png" alt="Plano Topo" />
-  </div>
-  <h2>Teste Grátis 3 Horas</h2>
+<div class="planos-container">
+  <div class="plano">
+    <h3>Teste Grátis</h3>
     <ul>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 2.000 Canais em HD e 4K. (+18 Opcional)</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 25.000 Filmes e Séries Atualizado diariamente</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Suporte 24/7 Atendimento Humanizado</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Compativel Com TV Smart, Celular, TV Box, Fire Stick</p>
-	  <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Aplicativo próprio Para TV Smart, Celular e TV Box</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Sistema Ant Travamentos</p>
+      <li>2.000 Canais Ao Vivo</li>
+      <li>25.000 Filmes/ Séries/ Novelas</li>
+      <li>Qualidade HD/4K</li>
+      <li>Guia de Programação [EPG]</li>
+	  <li>Assista na Smart TV</li>
+	  <li>Assista no TV BOX /Fire Stick TV</li>
+      <li>Assista no Smartphone/Tablet</li>
+      <li>Assista no Computador</li>
+      <li>Programação Adultos [Opcional]</li>
+      <li>Sistema Ant Travamentos</li>
     </ul>
-    <p><strong>R$ 0 Grátis</strong></p>
+    <div class="desconto">Teste 3 Horas</div>
+    <div class="preco">R$ Grátis</div>
     <a href="https://wa.me/5511961347098?text=Olá!%20PrimeTV!%20Gostaria%20de%20testar%20o%20serviço%20gratuitamente%20por%203%20horas!">
-      <button class="btn-green">Teste Grátis</button>
+      <button class="btn-green">Testar Grátis</button>
     </a>
   </div>
 
-<div class="plan">
-  <div class="plan-image">
-    <img src="img/plano2.png" alt="Plano Topo" />
-  </div>
-    <h2>Plano Mensal</h2>
+  <div class="plano">
+    <h3>Plano MENSAL</h3>
     <ul>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 2.000 Canais em HD e 4K. (+18 Opcional)</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 25.000 Filmes e Séries Atualizado diariamente</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Suporte 24/7 Atendimento Humanizado</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Compativel Com TV Smart, Celular, TV Box, Fire Stick</p>
-	  <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Aplicativo próprio Para TV Smart, Celular e TV Box</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Sistema Ant Travamentos</p>
+      <li>2.000 Canais Ao Vivo</li>
+      <li>25.000 Filmes/ Séries/ Novelas</li>
+      <li>Qualidade HD/4K</li>
+      <li>Guia de Programação [EPG]</li>
+	  <li>Assista na Smart TV</li>
+	  <li>Assista no TV BOX /Fire Stick TV</li>
+      <li>Assista no Smartphone/Tablet</li>
+      <li>Assista no Computador</li>
+      <li>Programação Adultos [Opcional]</li>
+      <li>Sistema Ant Travamentos</li>
     </ul>
-    <p><strong>R$ 24,90 / Mês</strong></p>
+    <div class="desconto">🎁 20% DE DESCONTO</div>
+    <div class="preco">R$ 24,90 /Mês</div>
     <a href="https://api.whatsapp.com/send?phone=5511961347098&text=Quero Assinar o Plano Mensal!">
-      <button class="btn-green">Assine Já</button>
+      <button class="btn-green">COMPRAR AGORA</button>
     </a>
   </div>
 
-<div class="plan">
-  <div class="plan-image">
-    <img src="img/plano3.png" alt="Plano Topo" />
-  </div>
-    <h2>Plano Semestral</h2>
+  <div class="plano">
+    <h3>Plano Semestral</h3>
     <ul>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 2.000 Canais em HD e 4K. (+18 Opcional)</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 25.000 Filmes e Séries Atualizado diariamente</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Suporte 24/7 Atendimento Humanizado</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Compativel Com TV Smart, Celular, TV Box, Fire Stick</p>
-	  <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Aplicativo próprio Para TV Smart, Celular e TV Box</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Sistema Anti Travamentos</p>
+      <li>2.000 Canais Ao Vivo</li>
+      <li>25.000 Filmes/ Séries/ Novelas</li>
+      <li>Qualidade HD/4K</li>
+      <li>Guia de Programação [EPG]</li>
+	  <li>Assista na Smart TV</li>
+	  <li>Assista no TV BOX /Fire Stick TV</li>
+      <li>Assista no Smartphone/Tablet</li>
+      <li>Assista no Computador</li>
+      <li>Programação Adultos [Opcional]</li>
+      <li>Sistema Ant Travamentos</li>
     </ul>
-    <p><strong>R$ 105,90 / 6 Meses</strong></p>
+    <div class="desconto">🎁 40% DE DESCONTO</div>
+    <div class="preco">R$ 105,90 /6 Mesês</div>
     <a href="https://api.whatsapp.com/send?phone=5511961347098&text=Quero o Plano Semestral!">
-      <button class="btn-green">Assine Já</button>
+      <button class="btn-green">COMPRAR AGORA</button>
     </a>
   </div>
 
- <div class="plan">
-  <div class="plan-image">
-    <img src="img/plano4.png" alt="Plano Topo" />
-  </div>
-    <h2>Plano Anual</h2>
+  <div class="plano">
+    <h3>Plano Anual</h3>
     <ul>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 2.000 Canais em HD e 4K. (+18 Opcional)</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> 25.000 Filmes e Séries Atualizado diariamente</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Suporte 24/7 Atendimento Humanizado</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Compativel Com TV Smart, Celular, TV Box, Fire Stick</p>
-	  <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Aplicativo próprio Para TV Smart, Celular e TV Box</p>
-      <p><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18"> Sistema Ant Travamentos</p>
+      <li>2.000 Canais Ao Vivo</li>
+      <li>25.000 Filmes/ Séries/ Novelas</li>
+      <li>Qualidade HD/4K</li>
+      <li>Guia de Programação [EPG]</li>
+	  <li>Assista na Smart TV</li>
+	  <li>Assista no TV BOX /Fire Stick TV</li>
+      <li>Assista no Smartphone/Tablet</li>
+      <li>Assista no Computador</li>
+      <li>Programação Adultos [Opcional]</li>
+      <li>Sistema Ant Travamentos</li>
     </ul>
-    <p><strong>R$ 299,90 / Ano</strong></p>
+    <div class="desconto">🎁 46% DE DESCONTO</div>
+    <div class="preco">R$ 299,90 /Ano</div>
     <a href="https://api.whatsapp.com/send?phone=5511961347098&text=Quero o Plano Anual!">
-      <button class="btn-green">Assine Já</button>
+      <button class="btn-green">COMPRAR AGORA</button>
     </a>
   </div>
-  </div>
+</div>
 </section>
 
 <!-- Overlay escura -->

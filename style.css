@@ -1929,18 +1929,22 @@ body {
   background-color: #000000;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  flex: 1 1 300px;
-  max-width: 400px;
+  flex: 1 1 calc(25% - 20px); /* 4 por linha no desktop */
+  max-width: calc(25% - 20px);
+  min-width: 250px;
   padding: 20px;
   box-sizing: border-box;
   transition: transform 0.3s;
+  height: auto;
 }
 
-/* 👇 Responsividade para celular */
+/* Responsivo: Celular */
 @media (max-width: 768px) {
   .plan {
     flex: 1 1 100%;
     max-width: 100%;
+    padding: 30px 25px;     /* mais largo */
+    min-height: unset;      /* remove altura mínima se existir */
   }
 }
 
@@ -1968,10 +1972,22 @@ body {
   gap: 10px;
 }
 
-.plan p {
-  font-size: 18px;
+.desconto {
+  background: #fff;
+  color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+  display: inline-block;
   font-weight: bold;
-  margin: 20px 0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.plan p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 15px 0;
 }
 
 .btn-green {

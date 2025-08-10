@@ -179,19 +179,30 @@ setTimeout(() => {
     cursor: pointer;
     white-space: nowrap;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
-    text-shadow: 1px 1px 2px #000; /* contorno preto suave */
+    text-shadow: 1px 1px 2px #000;
   ">
-    ▶ Video do Aplicativo
+    <img src="img/play.png" alt="Ícone" style="
+      width: 25px; 
+      height: 25px; 
+      vertical-align: middle; 
+      margin-right: 4px;
+    ">
+    Vídeo do Aplicativo
   </button>
-</div>	
+</div>
 	
-  <button class="botao-profissional botao-planos" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' })">
+<button class="botao-profissional botao-planos" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' })">
   🛒 Ver os Planos
 </button>
 </div>
-	
-  <button class="botao-sobre" onclick="scrollToSection('sobre')"> <span style="color:#00FF00; font-weight:bold;">✅ Ver Certificado ANATEL</button>
-  </header>
+
+<button class="botao-sobre" onclick="scrollToSection('sobre')">
+  <span style="color:#00FF00; font-weight:bold;">
+    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
+     Ver Certificado ANATEL
+  </span>
+</button>
+</header>
 </div>
 
 <!-- Estilo para vídeo responsivo -->
@@ -981,6 +992,7 @@ setTimeout(() => {
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

@@ -109,18 +109,127 @@ setTimeout(() => {
   mostrarNotificacaoPersonalizada();
 }, 2000);
 </script>	
-  <!-- HEADER -->
-  <header>	 
+<!-- HEADER -->
+<header>	 
 <section class="hero-iptv;">
   <div class="container-hero">
 
-    <div class="imagem-hero;">
-      <img src="img/MOCKUP-ON.png" alt="Dispositivos CineFlick">
+    <!-- Carrossel sem alterar tamanho -->
+    <div class="imagem-hero">
+      <div class="carousel">
+        <img src="img/MOCKUP-ON.png" alt="Dispositivos CineFlick">
+        <img src="img/MOCKUP-ON1.png" alt="Dispositivos CineFlick 2">
+        <img src="img/MOCKUP-ON2.png" alt="Dispositivos CineFlick 3">
+		<img src="img/MOCKUP-ON3.png" alt="Dispositivos CineFlick 3">
+		<img src="img/MOCKUP-ON4.png" alt="Dispositivos CineFlick 3">
+      </div>
     </div>
-<h1 class="titulo titulo-shine" id="textoDigitado" style="margin-top: -20px;"></h1>
-<p class="titulowpp" style="margin-top: -35px;">Assista <span style="color:#ADFF2F; font-weight:bold;"> 2 MIL Canais Ao Vivo<span style="color:#FFFFFF; font-weight:bold;"> + Catálogo <span style="color: #00aaff;">Netflix</span>, <span style="color: #00aaff;">HBO Max</span> e <span style="color: #00aaff;">Premiere</span>  Na sua<span style="color:#ADFF2F; font-weight:bold;"> TV SMART, TV BOX ou CELULAR! <span style="color:#FFFFFF; font-weight:bold;"></p>
+
+    <h1 class="titulo titulo-shine" id="textoDigitado" style="margin-top: -15px;"></h1>
+    <p class="titulowpp" style="margin-top: -35px;">
+      Assista <span style="color:#ADFF2F; font-weight:bold;"> 2 MIL Canais Ao Vivo</span>
+      <span style="color:#FFFFFF; font-weight:bold;"> + Catálogo </span>
+      <span style="color: #00aaff;">Netflix</span>, 
+      <span style="color: #00aaff;">HBO Max</span> e 
+      <span style="color: #00aaff;">Premiere</span>  
+      Na sua<span style="color:#ADFF2F; font-weight:bold;"> TV SMART, TV BOX ou CELULAR! </span>
+    </p>
   </div>
 </section>
+
+<style>
+.imagem-hero {
+  overflow: hidden;
+  width: fit-content;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Correção para tablets e desktops */
+@media (min-width: 768px) {
+  .container-hero {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    margin-top: -40px !important;
+    text-align: center;
+	font-size: 1.5rem;
+    margin-left: 0 !important;
+  }
+
+  .titulowpp {
+    margin-top: -60px !important;
+    text-align: center;
+	font-size: 1.rem;
+    margin-left: 0px !important; /* adicionei 'px' na unidade */
+  }
+
+  /* Reduz o tamanho das imagens */
+  .imagem-hero img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+  }
+  /* Correção para tablets e desktops */
+@media (min-width: 1024px) {
+  .container-hero {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .titulowpp {
+    margin-top: -60px !important;
+    text-align: center;
+	font-size: 1.rem;
+    margin-left: 200px !important; /* adicionei 'px' na unidade */
+  }
+  
+}
+</style>
+<script>
+const carousel = document.querySelector(".carousel");
+const images = document.querySelectorAll(".carousel img");
+let index = 0;
+
+function slideShow() {
+  index = (index + 1) % images.length;
+  // largura da imagem visível (assumindo que todas têm a mesma largura)
+  const imgWidth = images[0].clientWidth;
+  carousel.style.transform = `translateX(-${index * imgWidth}px)`;
+}
+
+setInterval(slideShow, 3000);
+</script>
+
+<script>
+// Carrossel automático
+const carousel = document.querySelector(".carousel");
+const images = document.querySelectorAll(".carousel img");
+let index = 0;
+
+function slideShow() {
+  index = (index + 1) % images.length;
+  carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+// troca a cada 1 segundo
+setInterval(slideShow, 3000);
+</script>
 
 <script>
   const texto = "CANAIS AO VIVO, FILMES E SÉRIES Por R$ 24,90/MÊS";
@@ -969,6 +1078,7 @@ setTimeout(() => {
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

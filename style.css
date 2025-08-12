@@ -2174,6 +2174,15 @@ body {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* sombra opcional pra destacar */
 }
 
+@media (min-width: 320px) and (max-width: 375px) {
+  /* Ajuste específico para tablets */
+  .titulo {
+    margin-left: 0 !important;
+    text-align: center;
+    font-size: 1.rem; /* ajuste de fonte, opcional */
+  }
+}
+
 .titulowpp {
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -2606,4 +2615,5 @@ body {
   margin-bottom: 8px;
   font-size: 20px;
 }
+
 

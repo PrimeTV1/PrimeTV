@@ -234,6 +234,22 @@ setInterval(slideShow, 3000);
 document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 	
+<style>
+  img {
+    -webkit-user-drag: none; /* Bloqueia arrastar no Chrome/Safari */
+    user-drag: none;
+    pointer-events: none;    /* Bloqueia clique e interação */
+  }
+</style>
+
+<script>
+  // Bloqueia botão direito
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Bloqueia início de arrasto
+  document.addEventListener('dragstart', e => e.preventDefault());
+</script>
+	
 <script>
   const texto = "CANAIS AO VIVO, FILMES E SÉRIES Por R$ 24,90/MÊS";
   const elemento = document.getElementById("textoDigitado");
@@ -1081,6 +1097,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

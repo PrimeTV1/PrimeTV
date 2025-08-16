@@ -392,21 +392,12 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     width: 100%;
     max-width: 800px;
     margin: 20px auto;
-    /* Proporção 16:9 */
-    padding-bottom: 56.25%;
+    padding-bottom: 56.25%; /* padrão: 16:9 */
     height: 0;
     overflow: hidden;
   }
 
-  .video-section iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
+  .video-section iframe,
   .video-section img.video-thumb {
     position: absolute;
     top: 0;
@@ -414,7 +405,14 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     width: 100%;
     height: 100%;
     border: 0;
-    cursor: pointer;
+  }
+
+  /* Ajuste para telas grandes (desktop) */
+  @media (min-width: 1024px) {
+    .video-section {
+      max-width: 750px;      /* reduz um pouco a largura */
+      padding-bottom: 22%;   /* proporção mais compacta (aprox. 4:3) */
+    }
   }
 </style>
 
@@ -1117,3 +1115,4 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+

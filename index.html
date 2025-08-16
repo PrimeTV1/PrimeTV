@@ -469,13 +469,13 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     display: block;
   }
   
-  .video-section {
+.video-section {
   position: relative;
   width: 100%;
   max-width: 800px;
-  margin: -5px auto; /* Espaço controlado */
-  aspect-ratio: 16 / 9; /* Mantém proporção 16:9 */
-  cursor: pointer;
+  margin: 20px auto;
+  padding-top: 56.25%; /* Proporção 16:9 */
+  overflow: hidden; /* Garante que nada vaze */
 }
 
 .video-section iframe,
@@ -486,7 +486,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   width: 100%;
   height: 100%;
   border: none;
-  object-fit: cover;
 }
 </style>
 	  
@@ -1164,3 +1163,4 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+

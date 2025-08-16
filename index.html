@@ -424,16 +424,15 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     const section = document.getElementById("videoSection");
 
     // Substitui pela iframe com autoplay
-    section.innerHTML = `
-      <iframe 
-        width="100%" height="100%" 
-        src="https://www.youtube.com/embed/beyAc7ymABA?autoplay=1&rel=0"   
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    `;
+section.innerHTML = `
+  <iframe 
+    src="https://www.youtube.com/embed/beyAc7ymABA?autoplay=1&rel=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+`;
 
     // Scroll suave até o topo da seção com ajuste de -100px
     const yOffset = -100;
@@ -475,7 +474,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   max-width: 800px;
   margin: 20px auto;
   padding-top: 56.25%; /* Proporção 16:9 */
-  overflow: hidden; /* Garante que nada vaze */
+  overflow: hidden;
 }
 
 .video-section iframe,
@@ -1163,4 +1162,3 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
-

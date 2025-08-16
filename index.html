@@ -244,8 +244,37 @@ setTimeout(() => {
   left: 15%;
   transform: translateX(-50%);
 }
-  
+
+.imagem-hero {
+  overflow: hidden;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
 }
+
+.imagem-hero img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* 🔹 limita a altura em celulares */
+  object-fit: contain;
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) {
+  .imagem-hero img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+/* Ajustes para desktops */
+@media (min-width: 1024px) {
+  .imagem-hero img {
+    max-width: 450px;
+    max-height: 400px;
+  }
+}	
+
 </style>
 <script>
 const carousel = document.querySelector(".carousel");
@@ -1144,6 +1173,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

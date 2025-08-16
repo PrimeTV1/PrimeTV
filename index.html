@@ -468,6 +468,26 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   .video-thumb {
     display: block;
   }
+  
+  .video-section {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: -5px auto; /* Espaço controlado */
+  aspect-ratio: 16 / 9; /* Mantém proporção 16:9 */
+  cursor: pointer;
+}
+
+.video-section iframe,
+.video-section img.video-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
 </style>
 	  
 <!-- Título -->

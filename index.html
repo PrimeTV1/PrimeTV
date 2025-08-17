@@ -160,8 +160,9 @@ setTimeout(() => {
   transform: translateX(-50%);
 }
 .carousel img {
+  flex: 0 0 100%;      /* garante só 1 imagem por vez */
   width: 100%;
-  height: 200px;
+  height: 160px;
   display: block;
 }
 
@@ -171,8 +172,9 @@ setTimeout(() => {
 }
 
 .carousel img {
+  flex: 0 0 100%;      /* garante só 1 imagem por vez */
   display: block;
-  height: 200px;
+  height: 160px;
   max-width: 100%;
 }
 
@@ -1115,7 +1117,3 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-

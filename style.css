@@ -1364,7 +1364,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: url('img/introbanner.png') no-repeat center center fixed;
+  background: url('img/introbanner.webp') no-repeat center center fixed;
   background-size: cover;
   color: white;
 }
@@ -2615,6 +2615,7 @@ body {
   margin-bottom: 8px;
   font-size: 20px;
 }
+
 
 
 

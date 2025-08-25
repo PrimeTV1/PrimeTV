@@ -373,16 +373,12 @@ document.addEventListener('contextmenu', event => event.preventDefault());
      rel="noopener" 
      class="botao-profissional botao-whatsapp">
     <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:3px;"> Teste Grátis no WhatsApp
-  </a>	
+  </a>
 
+  <button class="botao-profissional botao-planos" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' })">
+  🛒 Ver Planos 
+</button>  
 </div>
-
-<button class="botao-sobre" onclick="scrollToSection('sobre')">
-  <span style="color:#00FF00; font-weight:bold;">
-    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
-     Ver Licença ANATEL
-  </span>
-</button>
 </header>
 </div>
 
@@ -715,8 +711,11 @@ document.addEventListener('contextmenu', event => event.preventDefault());
      class="botao-profissional botao-whatsapp">
     <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Quero meu Acesso
   </a>
-  <button class="botao-profissional botao-planos" onclick="document.getElementById('planos').scrollIntoView({ behavior: 'smooth' })">
-  🛒 Ver Planos 
+<button class="botao-sobre" onclick="scrollToSection('sobre')">
+  <span style="color:#00FF00; font-weight:bold;">
+    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
+     Ver Licença ANATEL
+  </span>
 </button>
 	    
 <section class="conteudo-iptv" style="background-image: url('img/fundored.png');">

@@ -1822,7 +1822,7 @@ body {
 }
 
 .titulo {
-  font-size: 1.3rem; /* aumenta o tamanho da fonte */
+  font-size: 1.2rem; /* aumenta o tamanho da fonte */
   margin-top: 50px; /* desce o título */
   color: white; /* garante legibilidade */
   text-align: center; /* opcional, se quiser centralizado */
@@ -2615,6 +2615,7 @@ body {
   margin-bottom: 8px;
   font-size: 20px;
 }
+
 
 
 

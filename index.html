@@ -127,8 +127,8 @@ setTimeout(() => {
       </div>
     </div>
 
-    <h1 class="titulo titulo-shine" id="textoDigitado" style="margin-top: -10px;"></h1>
-    <p class="titulowpp" style="margin-top: -35px;">
+    <h1 class="titulo titulo-shine" id="textoDigitado" style="margin-top: -8px;"></h1>
+    <p class="titulowpp" style="margin-top: -25px;">
        <span style="color:#ADFF2F; font-weight:bold;">Assista Canais Ao Vivo</span>
 	  <span style="color:#ADFF2F; font-weight:bold;"></span> + Catálogo
       <span style="color:#FFFFFF; font-weight:bold;"></span>
@@ -382,76 +382,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </header>
 </div>
 
-<!-- Estilo para vídeo responsivo -->
-<style>
-  .video-section {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding-bottom: 56.25%; /* padrão: 16:9 */
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video-section iframe,
-  .video-section img.video-thumb {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
-  /* Ajuste para telas grandes (desktop) */
-  @media (min-width: 1024px) {
-    .video-section {
-      max-width: 750px;      /* reduz um pouco a largura */
-      padding-bottom: 22%;   /* proporção mais compacta (aprox. 4:3) */
-    }
-  }
-</style>
-
-<div class="video-section" id="videoSection" onclick="scrollToVideoAndPlay()">
-  <img class="video-thumb" src="img/ytcapa.webp" alt="Capa do Vídeo YT" />
-</div>
-
-<script>
-  function scrollToVideoAndPlay() {
-    const section = document.getElementById("videoSection");
-
-    section.innerHTML = `
-      <iframe
-        src="https://www.youtube.com/embed/beyAc7ymABA?autoplay=1&rel=0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    `;
-
-    // Scroll suave até o vídeo
-    const yOffset = -100;
-    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-</script>
-
-  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
-     target="_blank" 
-     rel="noopener" 
-     class="botao-profissional botao-whatsapp">
-    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:3px;"> Teste Grátis no WhatsApp
-  </a>	
-
-</div>
-	  
-<!-- Título -->
-<h2 class="titulo-gloww" style="color: #ffffff; font-size: 0.9rem; text-align: center; margin-top: -0px; margin-bottom: 10px;">
-  <span style="color:#ADFF2F; font-weight:bold;"></h2>
-</h2>
-
 <!-- Slider Banner de Capas -->
 <div class="banner-slider" style="background-image: url('img/fundored.png');"> 
   <div class="slide-track">
@@ -569,6 +499,104 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   🛒 Ver Planos 
 </button>
 </div>
+
+
+<!-- Estilo para vídeo responsivo -->
+<style>
+  .video-section {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding-bottom: 56.25%; /* padrão: 16:9 */
+    height: 0;
+    overflow: hidden;
+    cursor: pointer; /* mostra que é clicável */
+  }
+
+  .video-section iframe,
+  .video-section img.video-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .video-section {
+      max-width: 750px;
+      padding-bottom: 22%; /* proporção mais compacta (4:3) */
+    }
+  }
+
+  .yt-fallback {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+</style>
+
+<!-- Seção do vídeo -->
+<div class="video-section" id="videoSection" data-video-id="beyAc7ymABA" onclick="scrollToVideoAndPlay()">
+  <img class="video-thumb" src="img/ytcapa.webp" alt="Capa do Vídeo YT" />
+</div>
+
+<script>
+  // Função que carrega o vídeo no iframe
+  function loadVideo() {
+    const section = document.getElementById("videoSection");
+    const videoId = section.dataset.videoId;
+
+    const origin = encodeURIComponent(window.location.origin || window.location.href);
+    const src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&origin=${origin}`;
+
+    section.innerHTML = `
+      <iframe
+        src="${src}"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <a class="yt-fallback" href="https://www.youtube.com/watch?v=${videoId}" target="_blank" rel="noopener">Abrir no YouTube</a>
+    `;
+  }
+
+  // Função que rola até a seção e já inicia o vídeo
+  function scrollToVideoAndPlay() {
+    const section = document.getElementById("videoSection");
+    const yOffset = -100;
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+
+    // inicia o vídeo depois do scroll
+    setTimeout(loadVideo, 400); 
+  }
+</script>
+
+  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
+     target="_blank" 
+     rel="noopener" 
+     class="botao-profissional botao-whatsapp">
+    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:3px;"> Teste Grátis no WhatsApp
+  </a>	
+
+</div>
+	  
+<!-- Título -->
+<h2 class="titulo-gloww" style="color: #ffffff; font-size: 0.9rem; text-align: center; margin-top: -0px; margin-bottom: 10px;">
+  <span style="color:#ADFF2F; font-weight:bold;"></h2>
+</h2>
+
 
 <div class="meu-slider-wrapper" style="width: 100vw;; background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 40px 0; margin-left: -20px">
   <div class="meu-slider-container">
@@ -1126,10 +1154,3 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-

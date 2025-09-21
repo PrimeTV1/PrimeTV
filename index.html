@@ -382,6 +382,218 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </header>
 </div>
 
+<div class="meu-slider-wrapper" style="width: 100vw; background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 40px 0; margin-left: -20px; margin-top: -80px">
+  <div class="meu-slider-container">
+    <div class="meu-slider" id="meu-slider">
+      <div class="meu-card" style="background-image: url('img/TV+.webp');"></div>
+      <div class="meu-card" style="background-image: url('img/HBO+.webp');"></div>
+      <div class="meu-card" style="background-image: url('img/NETFLIX+.webp');"></div>
+      <div class="meu-card" style="background-image: url('img/GLOBOPLAY+.webp');"></div>
+      <div class="meu-card" style="background-image: url('img/CANAIS+.webp');"></div>
+      <div class="meu-card" style="background-image: url('img/DOWNLOADOFFLINE.webp');"></div>
+    </div>
+
+    <div class="meu-slider-controls">
+      <button class="meu-slider-btn" onclick="slideSlider(-1)">❮</button>
+      <button class="meu-slider-btn" onclick="slideSlider(1)">❯</button>
+    </div>
+  </div>
+  <!-- Botões lado a lado -->
+<div class="botoes-centro3" style="background-image: url('img/fundored.png');">
+  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
+     target="_blank" 
+     rel="noopener" 
+     class="botao-profissional botao-whatsapp">
+    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Testar Grátis 3 Horas
+  </a>
+<div class="social-banner" style="background-image: url('img/fundored.png');">
+  <a href="https://www.tiktok.com/@prime_aovivo1" target="_blank" class="social-icon facebook"></a>
+  <a href="https://www.tiktok.com/@prime_aovivo1" target="_blank" class="social-icon instagram"></a>
+  <a href="https://www.tiktok.com/@prime_aovivo1" target="_blank" class="social-icon tiktok"></a>
+</div>
+</div>
+<style>
+.social-banner {
+  position: relative; /* referência para o título */
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* título dentro do banner */
+.social-banner::before {
+  content: "+11 MIL Seguidores"; /* texto do título */
+  position: absolute;
+  top: 135px;            /* distância do topo */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;          /* cor do texto */
+  font-size: 20px;      /* tamanho */
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* destaque */
+  pointer-events: none; /* não atrapalha clique nos ícones */
+}
+</style>
+
+
+<style>
+  .meu-slider-wrapper {
+    width: 100%;
+    background-color: #1e1e1e;
+  }
+
+  .meu-slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .meu-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .meu-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .meu-card {
+    flex: 0 0 250px;
+    height: 350px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .meu-slider-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .meu-slider-btn {
+    background-color: rgba(255,255,255,0.15);
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .meu-slider-btn:hover {
+    background-color: rgba(255,255,255,0.3);
+  }
+
+  @media (max-width: 1024px) {
+    .meu-card {
+      flex: 0 0 40%;
+      height: 280px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .meu-card {
+      flex: 0 0 70%;
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .meu-card {
+      flex: 0 0 90%;
+      height: 200px;
+    }
+  }
+  
+  .meu-card {
+  flex: 0 0 250px;
+  height: 350px; /* altura padrão */
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  scroll-snap-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .meu-card {
+    flex: 0 0 40%;
+    height: 320px; /* aumenta um pouco */
+  }
+}
+
+/* Celulares médios */
+@media (max-width: 768px) {
+  .meu-card {
+    flex: 0 0 70%;
+    height: 350px; /* aumenta mais a altura */
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .meu-card {
+    flex: 0 0 90%;
+    height: 350px; /* garante que a imagem não corte tanto */
+  }
+}
+</style>
+
+<script>
+  const slider = document.getElementById("meu-slider");
+  let autoSlide;
+
+  function slideSlider(direction) {
+    const cardWidth = slider.querySelector(".meu-card").offsetWidth + 20;
+    const maxScroll = slider.scrollWidth - slider.offsetWidth;
+
+    if (direction === 1) {
+      if (slider.scrollLeft >= maxScroll) {
+        slider.scrollLeft = 0; // volta pro início
+      } else {
+        slider.scrollLeft += cardWidth;
+      }
+    } else {
+      if (slider.scrollLeft <= 0) {
+        slider.scrollLeft = maxScroll; // volta pro fim
+      } else {
+        slider.scrollLeft -= cardWidth;
+      }
+    }
+  }
+
+  function startAutoSlide() {
+    autoSlide = setInterval(() => {
+      slideSlider(1);
+    }, 2000); // troca a cada 1 segundo
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  // Inicia autoplay
+  startAutoSlide();
+
+  // Para ao tocar ou passar mouse
+  slider.addEventListener("mouseenter", stopAutoSlide);
+  slider.addEventListener("mouseleave", startAutoSlide);
+  slider.addEventListener("touchstart", stopAutoSlide);
+  slider.addEventListener("touchend", startAutoSlide);
+</script>
+
 <!-- Slider Banner de Capas -->
 <div class="banner-slider" style="background-image: url('img/fundored.png');"> 
   <div class="slide-track">
@@ -499,6 +711,18 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   🛒 Ver Planos 
 </button>
 </div>
+<style>
+.banner-slider .slide {
+  margin: -35px;         /* remove qualquer espaço entre slides */
+  padding: 0;
+}
+
+.banner-slider .slide img {
+  width: 75%;        /* levemente menor que 100% */
+  height: auto;      /* mantém proporção */
+  display: block;    /* elimina espaçamento inline */
+}
+</style>
 
 
 <!-- Estilo para vídeo responsivo -->
@@ -598,151 +822,16 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </h2>
 
 
-<div class="meu-slider-wrapper" style="width: 100vw;; background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 40px 0; margin-left: -20px">
-  <div class="meu-slider-container">
-    <div class="meu-slider" id="meu-slider">
-      <div class="meu-card" style="background-image: url('img/TV+.webp');">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="meu-card" style="background-image: url('img/HBO+.webp');">
-        <h3></h3>
-        <p><p>
-      </div>
-      <div class="meu-card" style="background-image: url('img/NETFLIX+.webp');">
-        <h3></h3>
-        <p></p>
-      </div>
-      <div class="meu-card" style="background-image: url('img/GLOBOPLAY+.webp');">
-        <h3></h3>
-        <p></p>
-      </div>
-	  <div class="meu-card" style="background-image: url('img/CANAIS+.webp');">
-        <h3></h3>
-        <p></p>
-      </div>
-	  <div class="meu-card" style="background-image: url('img/DOWNLOADOFFLINE.webp');">
-        <h3></h3>
-        <p></p>
-      </div>
-    </div>
-	
 
-    <div class="meu-slider-controls">
-      <button class="meu-slider-btn" onclick="slideSlider(-1)">❮</button>
-      <button class="meu-slider-btn" onclick="slideSlider(1)">❯</button>
-    </div>
-  </div>
-</div>
-
-<style>
-  .meu-slider-wrapper {
-    width: 100%;
-    background-color: #1e1e1e;
-  }
-
-  .meu-slider-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  .meu-slider {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding-bottom: 10px;
-  }
-
-  .meu-slider::-webkit-scrollbar {
-    display: none;
-  }
-
-  .meu-card {
-    flex: 0 0 250px;
-    height: 350px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
-    background-color: #333;
-  }
-
-  .meu-card h3 {
-    font-size: 1.4em;
-    margin: 0;
-  }
-
-  .meu-card p {
-    margin-top: 10px;
-    font-size: 1em;
-    line-height: 1.4;
-  }
-
-  .meu-slider-controls {
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .meu-slider-btn {
-    background-color: rgba(255,255,255,0.15);
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .meu-slider-btn:hover {
-    background-color: rgba(255,255,255,0.3);
-  }
-
-  @media (max-width: 768px) {
-    .meu-card {
-      flex: 0 0 80%;
-    }
-  }
-</style>
-
-<script>
-  function slideSlider(direction) {
-    const slider = document.getElementById("meu-slider");
-    const cardWidth = slider.querySelector(".meu-card").offsetWidth + 20;
-    slider.scrollLeft += direction * cardWidth;
-  }
-</script>
 
     <div class="slider-marcas" style="margin-top: -10px;">
   <div class="slider-track" style="background-image: url('img/fundored.png');">
  
   </div>
 
-<!-- Botões lado a lado -->
-<div class="botoes-centro3" style="background-image: url('img/fundored.png');">
-  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
-     target="_blank" 
-     rel="noopener" 
-     class="botao-profissional botao-whatsapp">
-    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Quero meu Acesso
-  </a>
-<button class="botao-sobre" onclick="scrollToSection('sobre')">
-  <span style="color:#00FF00; font-weight:bold;">
-    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
-     Ver Licença ANATEL
-  </span>
-</button>
+
 	    
-<section class="conteudo-iptv" style="background-image: url('img/fundored.png');">
+<section class="conteudo-iptv" style="background-image: url('img/fundored.png'); margin-top: -10px">
   <div class="grid-conteudo">
     
     <div class="card">
@@ -788,54 +877,76 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 
-<div class="carousel-title" style="margin-top: 25px; background-image: url('img/fundored.png');">⭐Avaliação dos Clientes⭐</div> 
-<div class="carousel-wrapper" style="background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 0px 0;">
+<div class="carousel-title" style="margin-top: 25px; background-image: url('img/fundored.png');">Avaliações: ⭐⭐⭐⭐⭐⭐</div> 
+<div class="carousel-wrapper" style="background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 0px 0; position: relative; overflow: hidden;">
   <button class="arrow arrow-left" onclick="scrollCarousel(-1)">‹</button>
   <button class="arrow arrow-right" onclick="scrollCarousel(1)">›</button>
 
-  <div class="carousel-container" id="carousel">
-    <div class="carousel-slide">
-      <img src="img/depoimento1.webp" alt="Depoimento cliente 1">
-    </div>
-    <div class="carousel-slide">
-      <img src="img/depoimento3.webp" alt="Depoimento cliente 2">
-    </div>
-    <div class="carousel-slide">
-      <img src="img/depoimento4.webp" alt="Depoimento cliente 3">
-    </div>
-    <div class="carousel-slide">
-      <img src="img/depoimento1.webp" alt="Depoimento cliente 3">
-    </div>
-    <div class="carousel-slide">
-      <img src="img/depoimento2.webp" alt="Depoimento cliente 3">
-    </div>
-    <div class="carousel-slide">
-      <img src="img/depoimento4.webp" alt="Depoimento cliente 3">
-    </div>	 
-    <div class="carousel-slide">
-      <img src="img/depoimento1.webp" alt="Depoimento cliente 1">
-    </div>		  
-    <!-- Mais slides aqui -->
+  <div class="carousel-container" id="carousel" style="display: flex; scroll-behavior: smooth; overflow-x: auto; scrollbar-width: none;">
+    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 1"></div>
+    <div class="carousel-slide"><img src="img/depoimento3.webp" alt="Depoimento cliente 2"></div>
+    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento2.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 3"></div>	 
+    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 1"></div>		  
   </div>
 </div>
 
 <script>
-  function scrollCarousel(direction) {
-    const container = document.getElementById("carousel");
-    const slideWidth = container.querySelector(".carousel-slide").offsetWidth + 12; // inclui gap
+  const container = document.getElementById("carousel");
+  const slideWidth = container.querySelector(".carousel-slide").offsetWidth + 12; // inclui gap
+  let autoScroll;
+
+  function scrollCarousel(direction = 1) {
     container.scrollLeft += direction * slideWidth;
+
+    // Se chegou no final, volta pro início
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+      container.scrollLeft = 0;
+    }
+
+    // Se rolou tudo para a esquerda, vai pro final
+    if (container.scrollLeft <= 0 && direction === -1) {
+      container.scrollLeft = container.scrollWidth;
+    }
   }
+
+  function startAutoScroll() {
+    autoScroll = setInterval(() => scrollCarousel(1), 1000); // troca a cada 1s
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScroll);
+  }
+
+  // inicia automático
+  startAutoScroll();
+
+  // pausa ao passar o mouse (desktop)
+  container.addEventListener("mouseenter", stopAutoScroll);
+  container.addEventListener("mouseleave", startAutoScroll);
+
+  // pausa ao tocar (mobile)
+  container.addEventListener("touchstart", stopAutoScroll);
+  container.addEventListener("touchend", startAutoScroll);
 </script>
 
 
 <!-- Botões lado a lado -->
-<div class="botoes-centro1" style="background-image: url('img/fundored.png');">
+<div class="botoes-centro1" style="background-image: url('img/fundored.png2');">
   <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
      target="_blank" 
      rel="noopener" 
      class="botao-profissional botao-whatsapp">
     <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Quero meu Acesso
   </a>
+  <button class="botao-sobre" onclick="scrollToSection('sobre')">
+  <span style="color:#00FF00; font-weight:bold;">
+    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
+     Ver Licença ANATEL
+  </span>
+</button>
 	  
 <!-- Título -->
 <h2 class="titulo-glow" style="color: #ffffff; font-size: 1.5rem; text-align: center; margin-top: 40px; margin-bottom: 10px;">
@@ -850,7 +961,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   <div class="plans">
  <div class="plan">
   <div class="plan-image">
-    <img src="img/plano1.webp" alt="Plano Topo" />
+    <img src="img/MOCKUP-ON2.webp" alt="Plano Topo" />
   </div>
   <div class="desconto2">TESTE GRÁTIS</div>
     <ul>
@@ -874,7 +985,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 <div class="plan">
   <div class="plan-image">
-    <img src="img/plano1.webp" alt="Plano Topo" />
+    <img src="img/MOCKUP-ON3.webp" alt="Plano Topo" />
   </div>
     <div class="desconto2">PLANO MENSAL</div>
     <ul>
@@ -898,7 +1009,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 <div class="plan">
   <div class="plan-image">
-    <img src="img/plano1.webp" alt="Plano Topo" />
+    <img src="img/MOCKUP-ON4.webp" alt="Plano Topo" />
   </div>
     <div class="desconto2">PLANO SEMESTRAL</div>
     <ul>
@@ -922,7 +1033,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
  <div class="plan">
   <div class="plan-image">
-    <img src="img/plano1.webp" alt="Plano Topo" />
+    <img src="img/MOCKUP-ON1.webp" alt="Plano Topo" />
   </div>
     <div class="desconto2">PLANO ANUAL</div>
     <ul>
@@ -1154,6 +1265,3 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
-
-
-

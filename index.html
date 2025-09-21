@@ -570,14 +570,15 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     const maxScroll = slider.scrollWidth - slider.offsetWidth;
 
     if (direction === 1) {
-      if (slider.scrollLeft >= maxScroll) {
+      // arredonda scrollLeft para evitar problemas de precisão no mobile
+      if (Math.ceil(slider.scrollLeft) >= maxScroll) {
         slider.scrollLeft = 0; // loop infinito
       } else {
         slider.scrollLeft += cardWidth;
       }
     } else {
       if (slider.scrollLeft <= 0) {
-        slider.scrollLeft = maxScroll; // loop infinito
+        slider.scrollLeft = maxScroll;
       } else {
         slider.scrollLeft -= cardWidth;
       }
@@ -585,32 +586,32 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   }
 
   function startAutoSlide() {
-    stopAutoSlide(); // garante que não existam intervalos duplicados
-    autoSlide = setInterval(() => slideSlider(1), 2000); // troca a cada 2s
+    stopAutoSlide();
+    autoSlide = setInterval(() => slideSlider(1), 2000);
   }
 
   function stopAutoSlide() {
     clearInterval(autoSlide);
   }
 
-  // Pausa ao interagir e reinicia após 5 segundos
   function pauseAutoSlide() {
     stopAutoSlide();
     clearTimeout(pauseTimeout);
     pauseTimeout = setTimeout(() => {
       startAutoSlide();
-    }, 5000); // aguarda 5 segundos após interação
+    }, 5000);
   }
 
-  // Inicia autoplay
+  // inicia autoplay
   startAutoSlide();
 
-  // Eventos de interação
+  // eventos de interação
   slider.addEventListener("mouseenter", pauseAutoSlide);
   slider.addEventListener("mouseleave", startAutoSlide);
   slider.addEventListener("touchstart", pauseAutoSlide);
   slider.addEventListener("touchend", startAutoSlide);
 </script>
+	
 <!-- Slider Banner de Capas -->
 <div class="banner-slider" style="background-image: url('img/fundored.png');"> 
   <div class="slide-track">
@@ -1282,6 +1283,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

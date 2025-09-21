@@ -829,8 +829,8 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </style>
 
 <!-- Seção do vídeo -->
-<div class="video-section" id="videoSection" data-video-id="beyAc7ymABA" onclick="scrollToVideoAndPlay()">
-  <img class="video-thumb" src="img/ytcapa.webp" alt="Capa do Vídeo YT" />
+<div class="video-section" id="videoSection" data-video-id="1120641413" onclick="scrollToVideoAndPlay()">
+  <img class="video-thumb" src="img/ytcapa.webp" alt="Capa do Vídeo Vimeo" />
 </div>
 
 <script>
@@ -839,15 +839,14 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     const section = document.getElementById("videoSection");
     const videoId = section.dataset.videoId;
 
-    const origin = encodeURIComponent(window.location.origin || window.location.href);
-    const src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&origin=${origin}`;
+    const src = `https://player.vimeo.com/video/${videoId}?autoplay=1&playsinline=1`;
 
     section.innerHTML = `
       <iframe
         src="${src}"
-        title="YouTube video player"
+        title="Vimeo video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
@@ -1325,6 +1324,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

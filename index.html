@@ -563,20 +563,21 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script>
   const slider = document.getElementById("meu-slider");
   let autoSlide;
+  let pauseTimeout;
 
-  function slideSlider(direction) {
+  function slideSlider(direction = 1) {
     const cardWidth = slider.querySelector(".meu-card").offsetWidth + 20;
     const maxScroll = slider.scrollWidth - slider.offsetWidth;
 
     if (direction === 1) {
       if (slider.scrollLeft >= maxScroll) {
-        slider.scrollLeft = 0; // volta pro início
+        slider.scrollLeft = 0; // loop infinito
       } else {
         slider.scrollLeft += cardWidth;
       }
     } else {
       if (slider.scrollLeft <= 0) {
-        slider.scrollLeft = maxScroll; // volta pro fim
+        slider.scrollLeft = maxScroll; // loop infinito
       } else {
         slider.scrollLeft -= cardWidth;
       }
@@ -584,22 +585,30 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   }
 
   function startAutoSlide() {
-    autoSlide = setInterval(() => {
-      slideSlider(1);
-    }, 2000); // troca a cada 1 segundo
+    stopAutoSlide(); // garante que não existam intervalos duplicados
+    autoSlide = setInterval(() => slideSlider(1), 2000); // troca a cada 2s
   }
 
   function stopAutoSlide() {
     clearInterval(autoSlide);
   }
 
+  // Pausa ao interagir e reinicia após 5 segundos
+  function pauseAutoSlide() {
+    stopAutoSlide();
+    clearTimeout(pauseTimeout);
+    pauseTimeout = setTimeout(() => {
+      startAutoSlide();
+    }, 5000); // aguarda 5 segundos após interação
+  }
+
   // Inicia autoplay
   startAutoSlide();
 
-  // Para ao tocar ou passar mouse
-  slider.addEventListener("mouseenter", stopAutoSlide);
+  // Eventos de interação
+  slider.addEventListener("mouseenter", pauseAutoSlide);
   slider.addEventListener("mouseleave", startAutoSlide);
-  slider.addEventListener("touchstart", stopAutoSlide);
+  slider.addEventListener("touchstart", pauseAutoSlide);
   slider.addEventListener("touchend", startAutoSlide);
 </script>
 
@@ -1274,4 +1283,5 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 

@@ -424,7 +424,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </header>
 </div>
 
-<div class="meu-slider-wrapper" style="width: 100vw; background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 40px 0; margin-left: -20px; margin-top: -80px">
+<div class="meu-slider-wrapper" style="width: 100vw; background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 0px 0; margin-left: -20px; margin-top: -80px">
   <div class="meu-slider-container">
     <div class="meu-slider" id="meu-slider">
       <div class="meu-card" style="background-image: url('img/TV+.webp');"></div>
@@ -930,6 +930,22 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     </div>	
 
   </div>
+  <style>
+/* Grid padrão (mobile): mantém a pilha de 1 coluna, sem alterar nada */
+.grid-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Apenas para computadores/notebooks (>=992px) */
+@media (min-width: 992px) {
+  .grid-conteudo {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-auto-rows: auto;                 /* altura automática */
+  }
+}
+</style>	
 
   <div class="botao-centro">
     <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." target="_blank" class="btn-whatsapp">ADQUIRIR O MEU AGORA</a>
@@ -1324,6 +1340,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

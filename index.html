@@ -434,7 +434,16 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   pointer-events: none; /* não atrapalha clique nos ícones */
 }
 </style>
-
+	
+<script>
+  // Faz todos os cards levarem até a seção de vídeo
+  document.querySelectorAll('#meu-slider .meu-card').forEach(card => {
+    card.style.cursor = 'pointer'; // mostra que é clicável
+    card.addEventListener('click', function () {
+      scrollToVideoAndPlay(); // usa sua função já existente
+    });
+  });
+</script>
 
 <style>
   .meu-slider-wrapper {
@@ -1265,3 +1274,4 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+

@@ -104,13 +104,55 @@ function mostrarNotificacaoPersonalizada() {
 // Exibe uma notificação personalizada a cada 12 segundos
 setInterval(() => {
   mostrarNotificacaoPersonalizada();
-}, 18000);
+}, 28000);
 
 // Primeira notificação após 2 segundos
 setTimeout(() => {
   mostrarNotificacaoPersonalizada();
 }, 2000);
 </script>
+
+<style>
+#compra-notificacao {
+  position: fixed;      /* Fixa na tela */
+  bottom: 20px;         /* Distância do rodapé */
+  left: 20px;           /* Distância da lateral */
+  z-index: 9999;        /* Fica acima de outros elementos */
+  background: #28a745;  /* Verde confiança */
+  color: #fff;          /* Texto branco */
+  border-radius: 8px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  max-width: 90vw;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#compra-notificacao.visivel {
+  opacity: 1;
+}
+
+/* ajuste especial para celular */
+@media (max-width: 600px) {
+  #compra-notificacao {
+    border-width: 2px;   /* borda verde menor */
+    font-size: 13px;     /* texto menor */
+    padding: 6px 10px;
+  }
+  #compra-notificacao img {
+    width: 24px;
+  }
+}
+</style>
+
+<div id="compra-notificacao">
+  <span id="texto-notificacao"></span>
+</div>
 <!-- HEADER -->
 <header>	 
 <section class="hero-iptv;" style="margin-top: -18px;">
@@ -1283,6 +1325,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

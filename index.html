@@ -885,7 +885,69 @@ document.addEventListener('contextmenu', event => event.preventDefault());
  
   </div>
 
+<div class="carousel-wrapper" style="background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 0px 0; position: relative; overflow: hidden;">
+<div class="carousel-title" style="margin-top: 15px;">Clientes: ⭐⭐⭐⭐⭐⭐</div> 
+  <button class="arrow arrow-left" onclick="scrollCarousel(-1)">‹</button>
+  <button class="arrow arrow-right" onclick="scrollCarousel(1)">›</button>
 
+  <div class="carousel-container" id="carousel" style="display: flex; scroll-behavior: smooth; overflow-x: auto; scrollbar-width: none;">
+    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 1"></div>
+    <div class="carousel-slide"><img src="img/depoimento2.webp" alt="Depoimento cliente 2"></div>
+    <div class="carousel-slide"><img src="img/depoimento3.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento5.webp" alt="Depoimento cliente 3"></div>
+    <div class="carousel-slide"><img src="img/depoimento3.webp" alt="Depoimento cliente 3"></div>	 
+    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 1"></div>		  
+  </div>
+</div>
+<!-- Botões lado a lado -->
+<div class="botoes-centro1" style="background-image: url('img/fundored.png');">
+  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
+     target="_blank" 
+     rel="noopener" 
+     class="botao-profissional botao-whatsapp">
+    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Plano Grátis 3 Horas
+  </a>
+
+
+<script>
+  const container = document.getElementById("carousel");
+  const slideWidth = container.querySelector(".carousel-slide").offsetWidth + 12; // inclui gap
+  let autoScroll;
+
+  function scrollCarousel(direction = 1) {
+    container.scrollLeft += direction * slideWidth;
+
+    // Se chegou no final, volta pro início
+    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
+      container.scrollLeft = 0;
+    }
+
+    // Se rolou tudo para a esquerda, vai pro final
+    if (container.scrollLeft <= 0 && direction === -1) {
+      container.scrollLeft = container.scrollWidth;
+    }
+  }
+
+  function startAutoScroll() {
+    autoScroll = setInterval(() => scrollCarousel(1), 1000); // troca a cada 1s
+  }
+
+  function stopAutoScroll() {
+    clearInterval(autoScroll);
+  }
+
+  // inicia automático
+  startAutoScroll();
+
+  // pausa ao passar o mouse (desktop)
+  container.addEventListener("mouseenter", stopAutoScroll);
+  container.addEventListener("mouseleave", startAutoScroll);
+
+  // pausa ao tocar (mobile)
+  container.addEventListener("touchstart", stopAutoScroll);
+  container.addEventListener("touchend", startAutoScroll);
+</script>
 	    
 <section class="conteudo-iptv" style="background-image: url('img/fundored.png'); margin-top: -10px">
   <div class="grid-conteudo">
@@ -947,78 +1009,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
   <div class="botao-centro">
     <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." target="_blank" class="btn-whatsapp">ADQUIRIR O MEU AGORA</a>
 
-
-
-<div class="carousel-title" style="margin-top: 25px; background-image: url('img/fundored.png');">Avaliações: ⭐⭐⭐⭐⭐⭐</div> 
-<div class="carousel-wrapper" style="background-image: url('img/fundored.png'); background-size: cover; background-position: center; padding: 0px 0; position: relative; overflow: hidden;">
-  <button class="arrow arrow-left" onclick="scrollCarousel(-1)">‹</button>
-  <button class="arrow arrow-right" onclick="scrollCarousel(1)">›</button>
-
-  <div class="carousel-container" id="carousel" style="display: flex; scroll-behavior: smooth; overflow-x: auto; scrollbar-width: none;">
-    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 1"></div>
-    <div class="carousel-slide"><img src="img/depoimento3.webp" alt="Depoimento cliente 2"></div>
-    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 3"></div>
-    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 3"></div>
-    <div class="carousel-slide"><img src="img/depoimento2.webp" alt="Depoimento cliente 3"></div>
-    <div class="carousel-slide"><img src="img/depoimento4.webp" alt="Depoimento cliente 3"></div>	 
-    <div class="carousel-slide"><img src="img/depoimento1.webp" alt="Depoimento cliente 1"></div>		  
-  </div>
-</div>
-
-<script>
-  const container = document.getElementById("carousel");
-  const slideWidth = container.querySelector(".carousel-slide").offsetWidth + 12; // inclui gap
-  let autoScroll;
-
-  function scrollCarousel(direction = 1) {
-    container.scrollLeft += direction * slideWidth;
-
-    // Se chegou no final, volta pro início
-    if (container.scrollLeft + container.offsetWidth >= container.scrollWidth) {
-      container.scrollLeft = 0;
-    }
-
-    // Se rolou tudo para a esquerda, vai pro final
-    if (container.scrollLeft <= 0 && direction === -1) {
-      container.scrollLeft = container.scrollWidth;
-    }
-  }
-
-  function startAutoScroll() {
-    autoScroll = setInterval(() => scrollCarousel(1), 1000); // troca a cada 1s
-  }
-
-  function stopAutoScroll() {
-    clearInterval(autoScroll);
-  }
-
-  // inicia automático
-  startAutoScroll();
-
-  // pausa ao passar o mouse (desktop)
-  container.addEventListener("mouseenter", stopAutoScroll);
-  container.addEventListener("mouseleave", startAutoScroll);
-
-  // pausa ao tocar (mobile)
-  container.addEventListener("touchstart", stopAutoScroll);
-  container.addEventListener("touchend", startAutoScroll);
-</script>
-
-
-<!-- Botões lado a lado -->
-<div class="botoes-centro1" style="background-image: url('img/fundored.png2');">
-  <a href="https://wa.me/5511961347098?text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." 
-     target="_blank" 
-     rel="noopener" 
-     class="botao-profissional botao-whatsapp">
-    <img src="img/wpp.webp" alt="" style="width:25px; height:25px; vertical-align:middle; margin-right:5px;"> Quero meu Acesso
-  </a>
-  <button class="botao-sobre" onclick="scrollToSection('sobre')">
-  <span style="color:#00FF00; font-weight:bold;">
-    <img src="img/anatel.png" alt="" style="width:25px; height:25px; vertical-align:middle; margin-left:-10px;">
-     Ver Licença ANATEL
-  </span>
-</button>
 	  
 <!-- Título -->
 <h2 class="titulo-glow" style="color: #ffffff; font-size: 1.5rem; text-align: center; margin-top: 40px; margin-bottom: 10px;">
@@ -1337,6 +1327,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

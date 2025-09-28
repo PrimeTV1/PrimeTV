@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1820465351834529');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1820465351834529&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">	
 <head>
   <meta charset="UTF-8" />
@@ -10,7 +27,7 @@
 
   <meta property="og:title" content="Sua Plataforma de Entretenimento Digital" />
 <meta property="og:description" content="A melhor solução para ter seu dispositivo em uma central de diversão. onde e quando quiser." />
-<meta property="og:image" content="https://prime-tv-pi.vercel.app/img/MOCKUP-ON.webp" />
+<meta property="og:image" content="https://prime-tv-pi.vercel.app/img/TVBOX.png" />
 <meta property="og:url" content="https://prime-tv-pi.vercel.app" />
 <meta name="description" content="A melhor solução para entretenimento digital, fácil, rápido e Pratico." />	
 </head>	
@@ -28,7 +45,7 @@
     <li><a href="#sobre" class="nav-shine">Sobre</a></li>
     <li><a href="#planos" class="nav-shine">Planos</a></li>
     <li><a href="#download" class="nav-shine">Download</a></li>
-    <a href="whatsapp://send?phone=5511961347098&amp;text=Ol%C3%A1!%20PrimeTV%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." class="nav-shine">WhatsApp</a>
+    <li><a href="whatsapp://send?phone=5511961347098&text=Ol%C3%A1!%20PrimeTV!%20Gostaria%20de%20testar%20o%20Aplicativo%20gratuitamente%20por%203%20horas." class="nav-shine">WhatsApp</a></li> 
   </ul>
 </nav>
 
@@ -64,7 +81,7 @@ const notificacoes = [
   { nome: "Juliana Costa53", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Maria, Comprou o Plano Anual!' },
   { nome: "Marcos Montenegro", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Marcos, Renovou o Plano Anual!' },
   { nome: "Fernanda Lima034", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Fernanda, Comprou o Plano Semestral!' },
-  { nome: "Eduardo Machado", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Eduardo, Comprou o Plano Mensal!' },
+  { nome: "Eduardo Machado", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Eduardo, Comrpou o Plano Mensal!' },
   { nome: "João Souza", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> João, Comprou o Plano Mensal' },
   { nome: "Larissa Rodrigues", mensagem: '<img src="img/pix2.png" alt="cartão" style="width:35px; vertical-align:middle; margin-right:4px;"> Larissa, Comprou o Plano Mensal!' }
 ];
@@ -331,7 +348,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 </script>
 	
 <script>
-  const texto = "Tudo em 1 Só Aplicativo R$ 24,90";
+  const texto = "Tudo em 1 só Aplicativo R$ 24,90";
   const elemento = document.getElementById("textoDigitado");
   let i = 0;
   let apagando = false;
@@ -446,7 +463,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 /* título dentro do banner */
 .social-banner::before {
-  content: "+17 MIL Seguidores Confiando na Prime TV+"; /* texto do título */
+  content: "+20 MIL Seguidores Confiando na Prime TV+"; /* texto do título */
   position: absolute;
   top: 129px;            /* distância do topo */
   left: 50%;
@@ -644,10 +661,6 @@ document.addEventListener('contextmenu', event => event.preventDefault());
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-16.webp" alt="Filme 2"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-12.webp" alt="Filme9"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-02.webp" alt="Filme 3"></div>
-	<div class="slide"><img src="img/apariserrada.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/valetudo.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/donademim.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/etamundomelhor.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
 	<div class="slide"><img src="img/wick4filme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/supermanfilme.webp" alt="Filme 4"></div>
@@ -655,37 +668,55 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 	<div class="slide"><img src="img/jurassicfilme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/quartetofilme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/thunderfilme.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/legodisney.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/lilostitch.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/missaoresgate.webp" alt="Filme 1"></div>
-    <div class="slide"><img src="img/corraqueapolicia.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/eladissetalvez.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/oscarasmalvados.webp" alt="Filme 4"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image5.webp" alt="Filme 4"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-18.webp" alt="Filme 5"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-17.webp" alt="Filme 6"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-06.webp" alt="Filme 2"></div>
     <div class="slide"><img src="https://oficialcineflick.com/wp-content/uploads/2024/08/IMG-51.webp" alt="Filme 3"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image2.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/legodisney.webp" alt="Filme 1"></div>
-	<div class="slide"><img src="img/valetudo.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/donademim.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/etamundomelhor.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/oclone.webp" alt="Série 1"></div>
-	<div class="slide"><img src="img/legodisney.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/lilostitch.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
+	<div class="slide"><img src="img/supermanfilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/f1filme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/jurassicfilme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/quartetofilme.webp" alt="Filme 4"></div>
 	<div class="slide"><img src="img/thunderfilme.webp" alt="Filme 4"></div>
-	<div class="slide"><img src="img/apariserrada.webp" alt="Filme 4"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-10.webp" alt="Filme 5"></div>
 	<div class="slide"><img src="img/wick4filme.webp" alt="Filme 4"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-03.webp" alt="Filme 6"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-16.webp" alt="Filme 2"></div>
 	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
     <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-15.webp" alt="Filme 3"></div>
+	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
+    <div class="slide"><img src="img/wick4filme.webp" alt="Filme 4"></div>
 	
-
+    <!-- Duplicado para looping contínuo -->
+	<div class="slide"><img src="img/donademim.webp" alt="Série 1"></div>
+	<div class="slide"><img src="img/supermanfilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/f1filme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/jurassicfilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/quartetofilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/thunderfilme.webp" alt="Filme 4"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image5.webp" alt="Filme 4"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-18.webp" alt="Filme 5"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-17.webp" alt="Filme 6"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-06.webp" alt="Filme 2"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image2.webp" alt="Filme 4"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-01.webp" alt="Filme 1"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-16.webp" alt="Filme 2"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-12.webp" alt="Filme9"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-02.webp" alt="Filme 3"></div>
+	<div class="slide"><img src="img/f1filme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/jurassicfilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/quartetofilme.webp" alt="Filme 4"></div>
+	<div class="slide"><img src="img/thunderfilme.webp" alt="Filme 4"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-10.webp" alt="Filme 5"></div>
+	<div class="slide"><img src="img/wick4filme.webp" alt="Filme 4"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-03.webp" alt="Filme 6"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-16.webp" alt="Filme 2"></div>
+	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
+    <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Filme-15.webp" alt="Filme 3"></div>
+	<div class="slide"><img src="img/bailarinafilme.webp" alt="Filme 1"></div>
+    <div class="slide"><img src="img/wick4filme.webp" alt="Filme 4"></div>
   </div>
 </div>
 <!-- Slider de Séries com título -->
@@ -697,20 +728,19 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-09.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-07.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-08.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/donademim.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="img/tvdserie.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/avenidabrasil.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/verdadessecretas.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-04.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image3.webp" alt="Série 1"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-14.webp" alt="Série 3"></div>
-	  <div class="slide"><img src="img/avenidabrasil.webp" alt="Série 1"></div>
-	  <div class="slide"><img src="img/verdadessecretas.webp" alt="Série 1"></div>
-	  <div class="slide"><img src="img/valetudo.webp" alt="Filme 4"></div>
-	  <div class="slide"><img src="img/donademim.webp" alt="Filme 4"></div>
+	  <div class="slide"><img src="img/tvdserie.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-02.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="img/supergirlserie.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-13.webp" alt="Série 4"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-10.webp" alt="Série 4"></div>
-	  <div class="slide"><img src="img/etamundomelhor.webp" alt="Filme 4"></div>
-	  <div class="slide"><img src="img/oclone.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/supergirlserie.webp" alt="Série 1"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-11.webp" alt="Série 5"></div>
 	  <div class="slide"><img src="img/tvdserie.webp" alt="Série 1"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-09.webp" alt="Série 6"></div>
@@ -722,26 +752,24 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-09.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-07.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-08.webp" alt="Série 1"></div>
-	  <div class="slide"><img src="img/etamundomelhor.webp" alt="Filme 4"></div>
-	  <div class="slide"><img src="img/oclone.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/donademim.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/tvdserie.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/avenidabrasil.webp" alt="Série 1"></div>
+	  <div class="slide"><img src="img/verdadessecretas.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-04.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/image3.webp" alt="Série 1"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-14.webp" alt="Série 3"></div>
 	  <div class="slide"><img src="img/tvdserie.webp" alt="Série 1"></div>
-	  <div class="slide"><img src="img/valetudo.webp" alt="Filme 4"></div>
-	  <div class="slide"><img src="img/donademim.webp" alt="Filme 4"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-02.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="img/supergirlserie.webp" alt="Série 1"></div>
 	  <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-13.webp" alt="Série 4"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-10.webp" alt="Série 4"></div>
       <div class="slide"><img src="https://topstreamingoficial.online/wp-content/uploads/2025/03/Serie-11.webp" alt="Série 5"></div>
-	  <div class="slide"><img src="img/avenidabrasil.webp" alt="Série 1"></div>
-	  <div class="slide"><img src="img/verdadessecretas.webp" alt="Série 1"></div>
   </div>
   <!-- ---------- INÍCIO: carrossel de marcas (cole onde quiser) ---------- -->
 <!-- Carrossel de Marcas -->
 <!-- Carrossel de Marcas -->
-<div class="brand-carousel" aria-label="Carrossel de marcas" role="region" style="background-image: url('img/fundored.png');"> 
+<div class="brand-carousel" aria-label="Carrossel de marcas" role="region" style="background-image: url('img/fundored.png');">
   <div class="brand-carousel__viewport">
     <div class="brand-carousel__track">
       <div class="brand-carousel__item"><img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="Netflix"></div>
@@ -1370,7 +1398,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 <section id="download" style="margin-top: -120px;">
   <div class="download-container">
     <h2 class="download-title"></h2>
-    <a href="https://primetv1.click/apk/PrimeTV.apk" 
+    <a href="https://primetv1.click/apk/PrimeTV–Seguro.apk" 
        class="download-button">
       <i class="fa fa-download"></i> Baixar Prime TV+ Oficial
     </a>
@@ -1548,5 +1576,4 @@ function abrirWhatsApp() {
 </div>
 <script src="script.js"></script>
 </body>
-
 </html>
